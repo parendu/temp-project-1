@@ -22,7 +22,7 @@
       });
 
      //create function to send api request to youtube server
-     function search(){
+     function search(searchTerm){
        
        // console.log("q: "+ q);
        //create queryurl for ajax call with apiKey
