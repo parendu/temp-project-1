@@ -35,10 +35,10 @@ function search(){
 
 }
    
-function resultResponse(response)
+function resultResponse(response) {
    
  // request.execute(function(response) {
-    var str = JSON.stringify(response.result);
+    var str = JSON.stringify(response, '', 2);
     console.log(str);
    
   $('#videos-appear-here').html('<pre>' + str + '</pre>');
