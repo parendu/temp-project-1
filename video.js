@@ -27,6 +27,7 @@ var videoName='';
 // Search for a specified string.
 function search() {
   var q = $('#search-term').val();
+  console.log.(q)
   var request = gapi.client.youtube.search.list({
     q: q,
     part: 'snippet'
