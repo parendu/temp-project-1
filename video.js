@@ -37,10 +37,52 @@
         console.log(response);
          //set results with resopnse data
         var results = response.data;
-      //  console.log("response" + results);
+      console.log("response" + results);
 
-        });
-  }
+     //create vidDiv and addclass for each search
+      // for (var i = 0; i < results.length; i++) {
+      //     var vidDiv = $("<div class = 'item' >")
+      //      //create img element var videoImage
+      //      var videoImage = $("<img>");
+      //       //add class video-image
+      //       videoImage.addClass('video-image');
+
+      //       //get src url
+      //       //set mostviewed attr
+      //       //set highly rated attr 
+           
+      //       videoImage.attr("url", results[i].);
+      //       videoImage.attr("data-", results[i].);
+      //       videoImage.attr("data-", results[i].);
+      //       videoImage.attr("data-",);
+
+
+
+      //   }  //for closing
+
+
+
+       }); //done closing
+     }  //search closing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //       //create the function to display content   
          function resultResponse(response) {
