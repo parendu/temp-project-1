@@ -57,10 +57,20 @@
 // };
 
 
+
+  $(document).ready(function(){
+
+  $('#search-term').submit(function(event){
+    event.preventDefault();
+    var searchTerm = $('#search-term').val();
+    search(searchTerm);
+  });
+
 // Your use of the YouTube API must comply with the Terms of Service:
 // https://developers.google.com/youtube/terms
 
 // Helper function to display JavaScript value on HTML page.
+/
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
     document.getElementById('videos-appear-here').innerHTML += responseString;
@@ -85,7 +95,7 @@ function search() {
     var q = $('#search-term').val();
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
-        q: "india",
+        q: q,
         maxResults: 3;
        
         
@@ -93,10 +103,13 @@ function search() {
     
     // Send the request to the API server,
     // and invoke onSearchRepsonse() with the response.
-    request.execute(onSearchResponse);
+     request.execute(function(response) {
+    var str = JSON.stringify(response.result);
+    $('#videos-appear-here').html('<pre>' + str + '</pre>');
+  });
 }
 
 // Called automatically with the response of the YouTube API request.
-function onSearchResponse(response) {
-    showResponse(response);
+// function onSearchResponse(response) {
+//     showResponse(response);
 }
