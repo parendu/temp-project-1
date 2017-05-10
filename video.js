@@ -19,10 +19,10 @@ function init(){
 $(".search-button").on("click", function(event) {
    event.preventDefault();
    console.log("hello");
-  // var q = $('#search-term').val();
+  var q = $('#search-term').val();
   // console.log(q);
   var request = gapi.client.youtube.search.list({
-    q: "java",
+    q: "q",
     part: 'snippet',
     type: "video",
     maxResult: 3,
