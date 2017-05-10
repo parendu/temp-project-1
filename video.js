@@ -16,8 +16,8 @@
         event.preventDefault();
         console.log("hello");
         var searchTerm = $('#search-term').val();
-        console.log(q);
-        search();
+        console.log(searchTerm);
+        search(searchTerm);
 
       });
 
