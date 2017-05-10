@@ -8,7 +8,7 @@ function init(){
 
        gapi.client.load("youtube", "v3", function(){
 
-                // searchA();               
+       search();               
 
        });
 
@@ -20,6 +20,8 @@ $(".search-button").on("click", function(event) {
    console.log("hello");
   var q = $('#search-term').val();
   console.log(q);
+  
+function search(){
   var request = gapi.client.youtube.search.list({
     q: 'q',
     part: 'snippet',
@@ -29,54 +31,23 @@ $(".search-button").on("click", function(event) {
     
   });
    
-   console.log(request);
-  request.execute(function(response) {
+    request.execute(onSearchResponse);
+
+}
+   
+function resultResponse(response)
+   
+ // request.execute(function(response) {
     var str = JSON.stringify(response.result);
     console.log(str);
    
-     var results = response.data;
-
-// for (var i = 0; i < results.length; i++) {
-//             //create div class item
-//             var gifDiv = $("<div class='item'>");
-
-//             // get rating, if rating is not r and pg-13 display GIFs
-
-//             if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
-
-//                 var rating = results[i].rating;
-//                 // set varialbe p and display Rating on page
-//                 var p = $("<p>").text("Rating: " + rating);
-//                 console.log(p);
-//             }
-
-//             //create img element var animalImage
-//             var animalImage = $("<img>");
-//             //add class animal-image
-//             animalImage.addClass('animal-image');
-
-//             //prepend animalImage to gifDiv
-//             gifDiv.prepend(p);
-//             gifDiv.prepend(animalImage);
-
-// $("##videos-appear-here").prepend(gifDiv);
   $('#videos-appear-here').html('<pre>' + str + '</pre>');
-// }
-
-  });
-});
-
-// }
 
 
+  };
 
 
-
-
-
-
-
-
-
-
-//
+// Called automatically with the response of the YouTube API request.
+function onSearchResponse(response) {
+    resultResponse(response);
+}
