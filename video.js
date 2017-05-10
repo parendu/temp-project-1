@@ -7,7 +7,7 @@ function init(){
 
        gapi.client.load("youtube", "v3", function(){
 
-//       search();               
+       search();               
 
        });
 
@@ -56,4 +56,3 @@ function onSearchResponse(response) {
     resultResponse(response);
 };
 
-search();
