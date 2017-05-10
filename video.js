@@ -39,7 +39,7 @@ function init(){
 
       };
 
-      create the function to display content   
+      //create the function to display content   
       function resultResponse(response) {
          
            var str = JSON.stringify(response, '', 2);
@@ -52,9 +52,9 @@ function init(){
 
 
 // // Called automatically with the response of the YouTube API request.
-// function onSearchResponse(response) {
-//     resultResponse(response);
-// };
+function onSearchResponse(response) {
+     resultResponse(response);
+ };
 
 
 
