@@ -12,7 +12,7 @@ function init(){
 
        });
 
-}
+};
 
 
 $(".search-button").on("click", function(event) {
@@ -20,7 +20,7 @@ $(".search-button").on("click", function(event) {
    console.log("hello");
   var q = $('#search-term').val();
   console.log(q);
-  
+};
 function search(){
   var request = gapi.client.youtube.search.list({
     q: 'q',
@@ -33,12 +33,11 @@ function search(){
    
     request.execute(onSearchResponse);
 
-}
+};
    
 function resultResponse(response) {
    
- // request.execute(function(response) {
-    var str = JSON.stringify(response, '', 2);
+     var str = JSON.stringify(response, '', 2);
     console.log(str);
    
   $('#videos-appear-here').html('<pre>' + str + '</pre>');
@@ -50,4 +49,4 @@ function resultResponse(response) {
 // Called automatically with the response of the YouTube API request.
 function onSearchResponse(response) {
     resultResponse(response);
-}
+};
