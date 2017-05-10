@@ -25,7 +25,7 @@ $(".search-button").on("click", function(event) {
     q: "q",
     part: 'snippet',
     type: "video",
-    maxResult: 3,
+    maxResults: 3,
     key: "AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw"
     
   });
@@ -34,7 +34,36 @@ $(".search-button").on("click", function(event) {
   request.execute(function(response) {
     var str = JSON.stringify(response.result);
     console.log(str);
-    $('#videos-appear-here').html('<pre>' + str + '</pre>');
+   
+  
+
+for (var i = 0; i < results.length; i++) {
+            //create div class item
+            var gifDiv = $("<div class='item'>");
+
+            // get rating, if rating is not r and pg-13 display GIFs
+
+            if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
+
+                var rating = results[i].rating;
+                // set varialbe p and display Rating on page
+                var p = $("<p>").text("Rating: " + rating);
+                console.log(p);
+            }
+
+            //create img element var animalImage
+            var animalImage = $("<img>");
+            //add class animal-image
+            animalImage.addClass('animal-image');
+
+            //prepend animalImage to gifDiv
+            gifDiv.prepend(p);
+            gifDiv.prepend(animalImage);
+
+$("##videos-appear-here").prepend(gifDiv);
+ $('#videos-appear-here').html('<pre>' + str + '</pre>');
+}
+
   });
 });
 
