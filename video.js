@@ -13,6 +13,7 @@ $("#search-button").on("click", function(event) {
     type: "video",
     maxResult: 3,
     apiKey: "AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw"
+    console.log(request);
   });
 
   request.execute(function(response) {
