@@ -11,12 +11,14 @@
 
 // Search for a specified string.
 $("#search-button").on("click", function(event) {
-
+   event.preventDefault();
   var q = $('#search-term').val();
   console.log.(q)
   var request = gapi.client.youtube.search.list({
     q: q,
-    part: 'snippet'
+    part: 'snippet',
+    type: "video",
+    maxResult: 3
   });
 
   request.execute(function(response) {
@@ -26,6 +28,15 @@ $("#search-button").on("click", function(event) {
   });
 
 
+});
+
+function init(){
+       gapi.client.setApiKey("AIzaSyBLYFa-iwmIdBWQWTGLOEIWFSfFqFFns0Q");
+       gapi.client.load("youtube", "V3", function(){
+
+       });
+
+}
 
 
 
@@ -34,7 +45,6 @@ $("#search-button").on("click", function(event) {
 
 
 
-}; 
 
 
 //
