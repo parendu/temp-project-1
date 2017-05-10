@@ -24,7 +24,7 @@
      //create function to send api request to youtube server
      function search(searchTerm){
        
-       // console.log("q: "+ q);
+       
        //create queryurl for ajax call with apiKey
     
     var queryURL = "https://www.googleapis.com/youtube/v3/search?q=" + searchTerm + "&part=snippet"+"&key=AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw";
@@ -37,41 +37,27 @@
         console.log(response);
          //set results with resopnse data
         var results = response.data;
-        console.log("resoponse" + results);
+        console.log("response" + results);
 
         });
   }
 
-        // var request = gapi.client.youtube.search.list({
-        //   q: 'india',
-        //   part: 'snippet',
-        //   type: "video",
-        //   maxResults: 3,
-        //   key: "AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw"
-          
-        // });
-         
-         //send request to youtube server
-//           request.execute(onSearchResponse);
-
-//       };
-
 //       //create the function to display content   
-//       function resultResponse(response) {
+         function resultResponse(response) {
          
-//            var str = JSON.stringify(response, '', 2);
-//           console.log(str);
+            var str = JSON.stringify(response, '', 2);
+           console.log(str);
          
-//         $('#videos-appear-here').html('<pre>' + str + '</pre>');
+         $('#videos-appear-here').html('<pre>' + str + '</pre>');
 
 
-//         };
+         };
 
 
 // // // Called automatically with the response of the YouTube API request.
-// function onSearchResponse(response) {
-//      resultResponse(response);
-//  };
+ function onSearchResponse(response) {
+      resultResponse(response);
+  };
 
 
 
