@@ -29,7 +29,8 @@ $(".search-button").on("click", function(event) {
     key: "AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw"
     
   });
-
+   
+   console.log(request);
   request.execute(function(response) {
     var str = JSON.stringify(response.result);
     console.log(str);
