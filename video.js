@@ -58,7 +58,7 @@ function init(){
 
 
 
-  $(document).ready(function(){
+ 
 
   $('#search-term').submit(function(event){
     event.preventDefault();
@@ -83,4 +83,4 @@ function init(){
 
       });
   });
-  });
+  
