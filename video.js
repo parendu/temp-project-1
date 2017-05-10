@@ -20,7 +20,7 @@ $(".search-button").on("click", function(event) {
    console.log("hello");
   var q = $('#search-term').val();
   console.log(q);
-});
+
 
   var request = gapi.client.youtube.search.list({
     q: 'q',
@@ -32,7 +32,7 @@ $(".search-button").on("click", function(event) {
   });
    
     request.execute(onSearchResponse);
-
+});
 };
    
 function resultResponse(response) {
