@@ -63,8 +63,8 @@ function init(){
   $('#search-term').submit(function(event){
     event.preventDefault();
     var searchTerm = $('#search-term').val();
-    search(searchTerm);
-  
+    console.log(searchTerm);
+    
 
 
  var queryURL = "https://www.googleapis.com/youtube/v3/search?q=" + searchTerm + "&part=snippet"+"&key=AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw";
@@ -80,5 +80,7 @@ function init(){
         //set results with resopnse data
         var results = response.data;
         console.log("resoponse" + results);
+
+      });
   });
   });
