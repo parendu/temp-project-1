@@ -96,7 +96,7 @@ function search() {
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
         q: q,
-        maxResults: 3;
+        maxResults: 3
        
         
     });
@@ -110,6 +110,6 @@ function search() {
 }
 
 // Called automatically with the response of the YouTube API request.
-// function onSearchResponse(response) {
-//     showResponse(response);
+   function onSearchResponse(response) {
+     showResponse(response);
 }
