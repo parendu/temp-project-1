@@ -32,7 +32,7 @@ $("#search-button").on("click", function(event) {
 
 function init(){
        gapi.client.setApiKey("AIzaSyBLYFa-iwmIdBWQWTGLOEIWFSfFqFFns0Q");
-       gapi.client.load("youtube", "V3", function(){
+       gapi.client.load("youtube", "v3", function(){
 
        });
 
