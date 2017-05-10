@@ -8,14 +8,13 @@ function init(){
 
        gapi.client.load("youtube", "v3", function(){
 
-                // searchA();
-                
+                // searchA();               
 
        });
 
 }
 
-// function searchA() {
+
 $(".search-button").on("click", function(event) {
    event.preventDefault();
    console.log("hello");
@@ -35,7 +34,7 @@ $(".search-button").on("click", function(event) {
     var str = JSON.stringify(response.result);
     console.log(str);
    
-  
+     var results = response.data;
 
 for (var i = 0; i < results.length; i++) {
             //create div class item
