@@ -21,7 +21,9 @@ $(".search-button").on("click", function(event) {
   var q = $('#search-term').val();
   console.log(q);
 
+});
 
+  console.log("q: "+ q);
   var request = gapi.client.youtube.search.list({
     q: q,
     part: 'snippet',
@@ -32,7 +34,7 @@ $(".search-button").on("click", function(event) {
   });
    
     request.execute(onSearchResponse);
-});
+
 };
    
 function resultResponse(response) {
