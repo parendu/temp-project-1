@@ -23,7 +23,7 @@ $(".search-button").on("click", function(event) {
 
 
   var request = gapi.client.youtube.search.list({
-    q: 'q',
+    q: q,
     part: 'snippet',
     type: "video",
     maxResults: 3,
