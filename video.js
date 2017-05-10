@@ -85,7 +85,7 @@ function search() {
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
         q: "india",
-        maxResults: 3
+       
         
     });
     
