@@ -84,24 +84,24 @@
 
 
 
-//       //create the function to display content   
-         function resultResponse(response) {
+// //       //create the function to display content   
+//          function resultResponse(response) {
          
-            var str = JSON.stringify(response, '', 2);
-           console.log(str);
+//             var str = JSON.stringify(response, '', 2);
+//            console.log(str);
          
-         $('#videos-appear-here').html('<pre>' + str + '</pre>');
+//          $('#videos-appear-here').html('<pre>' + str + '</pre>');
 
 
-         };
+//          };
 
 
-// // // Called automatically with the response of the YouTube API request.
-// function onSearchResponse(response) {
-      resultResponse(response);
- // };
+// // // // Called automatically with the response of the YouTube API request.
+// // function onSearchResponse(response) {
+//       resultResponse(response);
+//  // };
 
 
 
  
-  
+//   
