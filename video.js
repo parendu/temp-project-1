@@ -31,8 +31,8 @@ $("#search-button").on("click", function(event) {
 });
 
 function init(){
-       gapi.client.setApiKey("AIzaSyBLYFa-iwmIdBWQWTGLOEIWFSfFqFFns0Q");
-       gapi.client.load("youtube", "V3", function(){
+       gapi.client.setApiKey("AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw");
+       gapi.client.load("youtube", "v3", function(){
 
        });
 
