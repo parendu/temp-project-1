@@ -43,9 +43,9 @@
   }
 
 //       //create the function to display content   
-         function resultResponse(response.data) {
+         function resultResponse(response) {
          
-            var str = JSON.stringify(response.data, '', 2);
+            var str = JSON.stringify(response, '', 2);
            console.log(str);
          
          $('#videos-appear-here').html('<pre>' + str + '</pre>');
