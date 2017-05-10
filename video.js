@@ -40,21 +40,21 @@
 // };
 
 //create the function to display content   
-function resultResponse(response) {
+// function resultResponse(response) {
    
-     var str = JSON.stringify(response, '', 2);
-    console.log(str);
+//      var str = JSON.stringify(response, '', 2);
+//     console.log(str);
    
-  $('#videos-appear-here').html('<pre>' + str + '</pre>');
+//   $('#videos-appear-here').html('<pre>' + str + '</pre>');
 
 
-  };
+//   };
 
 
-// Called automatically with the response of the YouTube API request.
-function onSearchResponse(response) {
-    resultResponse(response);
-};
+// // Called automatically with the response of the YouTube API request.
+// function onSearchResponse(response) {
+//     resultResponse(response);
+// };
 
 
 // Your use of the YouTube API must comply with the Terms of Service:
@@ -63,7 +63,7 @@ function onSearchResponse(response) {
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
-    document.getElementById('response').innerHTML += responseString;
+    document.getElementById('videos-appear-here').innerHTML += responseString;
 }
 
 // Called automatically when JavaScript client library is loaded.
