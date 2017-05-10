@@ -1,12 +1,3 @@
-//create empty array for videos
-
-
-
-//Create the function to display videos
-
-
-
-
 
 
 // Search for a specified string.
@@ -20,7 +11,8 @@ $("#search-button").on("click", function(event) {
     q: q,
     part: 'snippet',
     type: "video",
-    maxResult: 3
+    maxResult: 3,
+    apiKey: "AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw"
   });
 
   request.execute(function(response) {
