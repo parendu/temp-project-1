@@ -36,32 +36,32 @@ $(".search-button").on("click", function(event) {
    
      var results = response.data;
 
-for (var i = 0; i < results.length; i++) {
-            //create div class item
-            var gifDiv = $("<div class='item'>");
+// for (var i = 0; i < results.length; i++) {
+//             //create div class item
+//             var gifDiv = $("<div class='item'>");
 
-            // get rating, if rating is not r and pg-13 display GIFs
+//             // get rating, if rating is not r and pg-13 display GIFs
 
-            if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
+//             if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
 
-                var rating = results[i].rating;
-                // set varialbe p and display Rating on page
-                var p = $("<p>").text("Rating: " + rating);
-                console.log(p);
-            }
+//                 var rating = results[i].rating;
+//                 // set varialbe p and display Rating on page
+//                 var p = $("<p>").text("Rating: " + rating);
+//                 console.log(p);
+//             }
 
-            //create img element var animalImage
-            var animalImage = $("<img>");
-            //add class animal-image
-            animalImage.addClass('animal-image');
+//             //create img element var animalImage
+//             var animalImage = $("<img>");
+//             //add class animal-image
+//             animalImage.addClass('animal-image');
 
-            //prepend animalImage to gifDiv
-            gifDiv.prepend(p);
-            gifDiv.prepend(animalImage);
+//             //prepend animalImage to gifDiv
+//             gifDiv.prepend(p);
+//             gifDiv.prepend(animalImage);
 
-$("##videos-appear-here").prepend(gifDiv);
- $('#videos-appear-here').html('<pre>' + str + '</pre>');
-}
+// $("##videos-appear-here").prepend(gifDiv);
+  $('#videos-appear-here').html('<pre>' + str + '</pre>');
+// }
 
   });
 });
