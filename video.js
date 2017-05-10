@@ -37,15 +37,15 @@
         console.log(response);
          //set results with resopnse data
         var results = response.data;
-        console.log("response" + results);
+      //  console.log("response" + results);
 
         });
   }
 
 //       //create the function to display content   
-         function resultResponse(response) {
+         function resultResponse(response.data) {
          
-            var str = JSON.stringify(response, '', 2);
+            var str = JSON.stringify(response.data, '', 2);
            console.log(str);
          
          $('#videos-appear-here').html('<pre>' + str + '</pre>');
@@ -55,9 +55,9 @@
 
 
 // // // Called automatically with the response of the YouTube API request.
- function onSearchResponse(response) {
+// function onSearchResponse(response) {
       resultResponse(response);
-  };
+ // };
 
 
 
