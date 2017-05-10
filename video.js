@@ -31,11 +31,9 @@ $("#search-button").on("click", function(event) {
 });
 
 function init(){
-<<<<<<< HEAD
+
        gapi.client.setApiKey("AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw");
-=======
-       gapi.client.setApiKey("AIzaSyBLYFa-iwmIdBWQWTGLOEIWFSfFqFFns0Q");
->>>>>>> ce836b358fc95f85e3a9aa2b7212e82dc506ba4b
+
        gapi.client.load("youtube", "v3", function(){
 
        });
