@@ -1,33 +1,32 @@
 
 
-//ini function to load youtube api library and set apikey
-function init(){
+    //ini function to load youtube api library and set apikey
+    function init(){
 
        gapi.client.setApiKey("AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw");
 
        gapi.client.load("youtube", "v3", function(){
-
-                   
-
+                  
        });
 
-};
+    };
 
-      //Get user entered search terms and assign to variable q
-      $("#search-button").on("click", function(event) {
-         event.preventDefault();
-         console.log("hello");
+    //Get user entered search terms and assign to variable q
+    $("#search-button").on("click", function(event) {
+        event.preventDefault();
+        console.log("hello");
         var searchTerm = $('#search-term').val();
         console.log(q);
         search();
 
       });
 
-      //create function to send api request to youtube server
-      function search(){
+     //create function to send api request to youtube server
+     function search(){
        
        // console.log("q: "+ q);
        //create queryurl for ajax call with apiKey
+    
     var queryURL = "https://www.googleapis.com/youtube/v3/search?q=" + searchTerm + "&part=snippet"+"&key=AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw";
     //Call ajax function
     $.ajax({
@@ -40,7 +39,8 @@ function init(){
         var results = response.data;
         console.log("resoponse" + results);
 
-});
+        });
+  }
 
         // var request = gapi.client.youtube.search.list({
         //   q: 'india',
