@@ -1,7 +1,6 @@
 
 
-// Search for a specified string.
-// // 
+//ini function to load youtube api library and set apikey
 function init(){
 
        gapi.client.setApiKey("AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw");
@@ -14,30 +13,33 @@ function init(){
 
 };
 
-
+//Get user entered search terms and assign to variable q
 $("#search-button").on("click", function(event) {
    event.preventDefault();
    console.log("hello");
   var q = $('#search-term').val();
   console.log(q);
-  search();
+  search(q);
 });
 
-function search(){
+//create function to send api request to youtube server
+function search(search){
   console.log("q: "+ q);
   var request = gapi.client.youtube.search.list({
     q: 'q',
     part: 'snippet',
     type: "video",
     maxResults: 3,
-    key: "AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw"
+   // key: "AIzaSyAs92o-m1w6elH20BhKZAIy0eggx8YCEmw"
     
   });
    
+   //send request to youtube server
     request.execute(onSearchResponse);
 
 };
-   
+
+//create the function to display content   
 function resultResponse(response) {
    
      var str = JSON.stringify(response, '', 2);
