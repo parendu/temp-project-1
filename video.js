@@ -7,7 +7,7 @@ function init(){
 
        gapi.client.load("youtube", "v3", function(){
 
-       search();               
+//       search();               
 
        });
 
@@ -24,7 +24,7 @@ $("#search-button").on("click", function(event) {
 
 //create function to send api request to youtube server
 function search(){
-  console.log("q: "+ q);
+ // console.log("q: "+ q);
   var request = gapi.client.youtube.search.list({
     q: 'q',
     part: 'snippet',
@@ -55,3 +55,5 @@ function resultResponse(response) {
 function onSearchResponse(response) {
     resultResponse(response);
 };
+
+search();
