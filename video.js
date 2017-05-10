@@ -26,7 +26,7 @@ $("#search-button").on("click", function(event) {
 function search(){
  // console.log("q: "+ q);
   var request = gapi.client.youtube.search.list({
-    q: 'q',
+    q: 'india',
     part: 'snippet',
     type: "video",
     maxResults: 3,
