@@ -20,7 +20,7 @@
       //prepare request
       var request = gapi.client.youtube.search.list({
         part: 'snippet',
-        q: searchTerm
+        q: searchTerm,
         maxResults: 3,
         order: "viewCount",
         type: "video"
@@ -32,20 +32,21 @@
         
            var results = response.items;
         console.log(results);
-          //each(results.items, function(index, item) {
+          
            for (var i = 0; i < results.length; i++){
                console.log(results[i]);
              
              var videoId = results[i].id.videoId;
              console.log(videoId);
              var imageUrl = results[i].snippet.thumbnails.default.url;
+             console.log(imageUrl);
              var videoTitle = results[i].snippet.title;
 
 
                 // <iframe width="560" height="315" src="https://www.youtube.com/embed/WPvGqX-TXP0" frameborder="0" allowfullscreen></iframe>
-               $("#videos-appear-here").append("video image: " + results[i].snippet.thumbnails.default.url);
-               $("#videos-appear-here").append("video id: " + results[i].id.videoId);
-               $("#videos-appear-here").append("video title: " + results[i].snippet.title);
+               $("#videos-appear-here").append("video image: " + imageUrl);
+               $("#videos-appear-here").append("video id: " + videoId);
+               $("#videos-appear-here").append("video title: " + videoTitle);
              //  $("#videos-appear-here").append("video id: " + item.id.video);
 
 
