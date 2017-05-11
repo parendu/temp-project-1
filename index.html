@@ -16,7 +16,7 @@
    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <!-- css file reference -->
     <script type="text/javascript"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <!-- <script src="auth.js"></script> -->
@@ -29,58 +29,37 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      	<span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Me</a>
+<div class="jumbotron text-center">
+  <div id="company-name" class="collapse in">
+  <h1>YouCode</h1> 
+  <p>Introduction to our Web Application</p> 
+ </div>
+   <form class="form-inline">
+    <div class="input-group">
+    <select class="form-control" id="search-term" placeholder="Select Subject" style="width: 300px" required>
+       
+      <!-- select class="form-control" id="sel1"> -->
+        <option>Java</option>
+        <option>PHP</option>
+        <option>JavaScript</option>
+        <option>GitHub</option>
+        <option>node.js</option>
+        <option>html</option>
+        <option>css</option>
+      </select>
+
+      <div class="input-group-btn">
+        <button type="button" id="search-button" class="btn btn-danger" data-toggle="collapse" data-target="#company-name">Search</button>
+      </div>
     </div>
-    
-
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-          
-     				 <li>
-				 	
-				  
-				  
-	  <div class="col-sm-12 col-md-12 pull-left seach">
-	 
-        <form class="navbar-form" role="search">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="search-term">
-            <div class="input-group-btn">
-                <button class="btn btn-default" id="search-button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-            </div>
-         </div>
-        </form>
-       </div>
-				  
-
-
-		</li>
-
-
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+ 
+  </form>
+</div>
 
 
 <!-- First Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
+   <div class="row">
       <!-- videos will display here -->
      <div id="video-appear-here">
    
@@ -96,4 +75,5 @@
 
 </body>
 </html>
+
 

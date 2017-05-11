@@ -42,34 +42,13 @@
              console.log(imageUrl);
              var videoTitle = results[i].snippet.title;
              console.log(videoTitle);
-             
-             //var textDiv = $("<div class='middle text'>" + videoTitle + "</div>");
-
-                var p = $("<p>").text(videoTitle);
-        
 
 
-             //create class image for each video        
-             var videoDiv = $("<div class = 'col-sm-3 item' >");
-             //create image element
-             var videoImage = $("<img>");
-             //add class to image
-             videoImage.addClass('video-image');
-             
-             //set src image
-             //set data-videoid
-             videoImage.attr("src", imageUrl);
-             videoImage.attr("data-videoId", videoId);
-             //prepend  video image to videoDiv
-             videoDiv.prepend(p);
-             videoDiv.prepend(videoImage);
-             
-             $("#video-appear-here").prepend(videoDiv);
-            
-
-
-
-
+                // <iframe width="560" height="315" src="https://www.youtube.com/embed/WPvGqX-TXP0" frameborder="0" allowfullscreen></iframe>
+               $("#videos-appear-here").append("video image: " + imageUrl);
+               $("#videos-appear-here").append("video id: " + videoId);
+               $("#videos-appear-here").append("video title: " + videoTitle);
+             //  $("#videos-appear-here").append("video id: " + item.id.video);
 
 
            }; //for loop
