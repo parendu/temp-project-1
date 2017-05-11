@@ -61,8 +61,10 @@
              videoImage.attr("src", imageUrl);
              videoImage.attr("data-videoId", videoId);
              //create favorite buttton
-             var favButton = $("<button type="button" id=" + videoId + "class="btn btn-default btn-sm">");
-             favButton.append("<span class="glyphicon glyphicon-star" aria-hidden="true"></span>");
+             var favButton = $("<button type='button' id=" + videoId + "class='btn btn-default btn-sm'>");
+             var addSpan = $("<span>");
+             addSpan.addClass('glyphicon glyphicon-star')
+             addSpan.attr("aria-hidden", 'true'); 
              //prepend  video image to videoDiv
              videoDiv.append(favButton);
              videoDiv.prepend(p);
