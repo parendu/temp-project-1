@@ -31,13 +31,17 @@
     //Call ajax function
     $.ajax({
         url: queryURL,
-        method: "GET"
+        method: "GET",
+        dataType: "JSON"
     }).done(function(response) {
         //set animal-view att animal
         console.log(response);
          //set results with resopnse data
         var results = response.data;
       console.log("response" + results);
+     // var videoImage = 
+
+
 
      //create vidDiv and addclass for each search
       // for (var i = 0; i < results.length; i++) {
@@ -47,7 +51,7 @@
       //       //add class video-image
       //       videoImage.addClass('video-image');
 
-      //       //get src url
+      //       //get src url 
       //       //set mostviewed attr
       //       //set highly rated attr 
            
