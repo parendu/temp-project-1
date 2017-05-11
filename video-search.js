@@ -51,6 +51,11 @@
 
              //create class image for each video        
              var videoDiv = $("<div class = 'col-sm-3 item' >");
+             //create favorite buttton
+             var favButton = $("<button type='button' id=" + videoId + "value='click' class='btn btn-default btn-sm'>");
+             var addSpan = $("<span>");
+             addSpan.addClass('glyphicon glyphicon-star')
+             addSpan.attr("aria-hidden", 'true'); 
              //create image element
              var videoImage = $("<img>");
              //add class to image
@@ -62,10 +67,10 @@
              videoImage.attr("data-videoId", videoId);
              videoImage.attr("value", 'click');
              //create favorite buttton
-             var favButton = $("<button type='button' id=" + videoId + "value='click' class='btn btn-default btn-sm'>");
-             var addSpan = $("<span>");
-             addSpan.addClass('glyphicon glyphicon-star')
-             addSpan.attr("aria-hidden", 'true'); 
+             // var favButton = $("<button type='button' id=" + videoId + "value='click' class='btn btn-default btn-sm'>");
+             // var addSpan = $("<span>");
+             // addSpan.addClass('glyphicon glyphicon-star')
+             // addSpan.attr("aria-hidden", 'true'); 
              //prepend  video image to videoDiv
              favButton.append(addSpan);
              videoDiv.prepend(favButton);
