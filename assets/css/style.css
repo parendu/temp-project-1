@@ -31,6 +31,10 @@
     };
     .p {
     font-size: 10px;
+    }
+    .thumbnails {
+     height: 300px;
+     width: 200px;
 
     }
  
