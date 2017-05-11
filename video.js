@@ -39,7 +39,12 @@
          //set results with resopnse data
         var results = response.data;
       console.log("response" + results);
-     // var videoImage = 
+     var videoId = results[0].items.id.videoId;
+     var videoTitle = results[0].items.snippet.title;
+     var videoThumbnail = results[0].items.snippet.thumbnails.default.url;
+     console.log(videoId);
+     console.log(videoTitle);
+     console.log(videoThumbnail);
 
 
 
