@@ -46,7 +46,7 @@
              //create class image for each video        
              var videoDiv = $("<div class = 'col-sm-3 item' >");
              //create image element
-             var videoImage = $("<image>");
+             var videoImage = $("<img>");
              //add class to image
              videoImage.addClass('video-image');
              
