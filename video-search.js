@@ -19,7 +19,7 @@
 
       //prepare request
       var request = gapi.client.youtube.search.list({
-        part: 'snippet', 'statistics',
+        part: 'snippet,statistics',
         q: searchTerm,
         maxResults: 3,
         order: "viewCount",
