@@ -33,7 +33,7 @@
         console.log(results);
           //each(results.items, function(index, item) {
            for (var i = 0; i < results.length; i++){
-               console.log(results.items[i]);
+               console.log(results[i]);
                console.log(item.id.videoId);
 
 
