@@ -57,7 +57,11 @@
              addSpan.addClass('glyphicon glyphicon-star')
              addSpan.attr("aria-hidden", 'true'); 
              //create image element
+             
+             var videoThumb = $("<div class="thumbnail">");
              var videoImage = $("<img>");
+             
+
              //add class to image
              videoImage.addClass('video-image');
              
@@ -66,16 +70,13 @@
              videoImage.attr("src", imageUrl);
              videoImage.attr("data-videoId", videoId);
              videoImage.attr("value", 'click');
-             //create favorite buttton
-             // var favButton = $("<button type='button' id=" + videoId + "value='click' class='btn btn-default btn-sm'>");
-             // var addSpan = $("<span>");
-             // addSpan.addClass('glyphicon glyphicon-star')
-             // addSpan.attr("aria-hidden", 'true'); 
+             
              //prepend  video image to videoDiv
+             videoThumb.append(videoImage);
              favButton.append(addSpan);
-             videoDiv.append(favButton);
-             videoDiv.prepend(p);
-             videoDiv.prepend(videoImage);
+             videoThumb.append(favButton);
+             videoThumb.prepend(p);
+             videoDiv.prepend(videoThumb);
              
              $("#video-appear-here").prepend(videoDiv);
             
