@@ -27,6 +27,7 @@
        });
       //execute request
       request.execute(function(response){
+        console.log(response);
            var results = response.request;
         console.log(results);
           each(results.items, function(index, item) {
