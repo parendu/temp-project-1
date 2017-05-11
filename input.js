@@ -34,14 +34,14 @@
           //each(results.items, function(index, item) {
            for (var i = 0; i < results.length; i++){
                console.log(results[i]);
-               console.log(item.id.videoId);
+             
 
 
                 // <iframe width="560" height="315" src="https://www.youtube.com/embed/WPvGqX-TXP0" frameborder="0" allowfullscreen></iframe>
-               $("#videos-appear-here").append("video image: " + item.snippet.thumbnails.default.url);
-               $("#videos-appear-here").append("video id: " + item.id.videoId);
-               $("#videos-appear-here").append("video title: " + item.snippet.title);
-               $("#videos-appear-here").append("video id: " + item.id.video);
+               $("#videos-appear-here").append("video image: " + results[i].item.snippet.thumbnails.default.url);
+               $("#videos-appear-here").append("video id: " + results[i].item.id.videoId);
+               $("#videos-appear-here").append("video title: " + results[i].item.snippet.title);
+             //  $("#videos-appear-here").append("video id: " + item.id.video);
 
 
            }; //for loop
