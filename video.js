@@ -18,7 +18,7 @@
         var searchTerm = $('#search-term').val();
         console.log(searchTerm);
         search(searchTerm);
-        showResponse(response);
+        
 
       });
 
@@ -46,7 +46,7 @@ function showResponse(response) {
     document.getElementById('videos-appear-here').innerHTML += responseString;
 }
 
-
+showResponse(response);
 
 
 
