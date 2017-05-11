@@ -28,7 +28,7 @@
       //execute request
       request.execute(function(response){
            var results = response.request;
-
+        console.log(results);
           each(results.items, function(index, item) {
            //for (var i = 0; i < result.items.length; i++){
                console.log(item.id.videoId);
