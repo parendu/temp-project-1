@@ -28,20 +28,23 @@
       //execute request
       request.execute(function(response){
         console.log(response);
-        console.log(response.items);
-           var results = response.request;
+        
+           var results = response.items;
         console.log(results);
-          each(results.items, function(index, item) {
-           //for (var i = 0; i < result.items.length; i++){
+          //each(results.items, function(index, item) {
+           for (var i = 0; i < result.items.length; i++){
+               console.log(results.items[i]);
                console.log(item.id.videoId);
 
+
+                // <iframe width="560" height="315" src="https://www.youtube.com/embed/WPvGqX-TXP0" frameborder="0" allowfullscreen></iframe>
                $("#videos-appear-here").append("video image: " + item.snippet.thumbnails.default.url);
                $("#videos-appear-here").append("video id: " + item.id.videoId);
                $("#videos-appear-here").append("video title: " + item.snippet.title);
                $("#videos-appear-here").append("video id: " + item.id.video);
 
 
-           }); //for loop
+           }; //for loop
 
       }); //response
 
