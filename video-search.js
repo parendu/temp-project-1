@@ -43,7 +43,7 @@
              var videoTitle = results[i].snippet.title;
              console.log(videoTitle);
              
-             var textDiv = $("div class='middle'>");
+             var textDiv = $("<div class='middle'>");
 
              textDiv.addClass = $("text" + videoTitle);
 
@@ -62,6 +62,7 @@
              //prepend  video image to videoDiv
              videoDiv.prepend(videoImage);
              $("#video-appear-here").prepend(videoDiv);
+             $("#video-appear-here").prepend(textDiv);
 
 
 
