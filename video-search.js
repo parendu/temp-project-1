@@ -61,7 +61,7 @@
              videoImage.attr("data-videoId", videoId);
              //prepend  video image to videoDiv
              videoDiv.prepend(videoImage);
-             textDiv.prepend(videoImage);
+             videoDiv.prepend(textDiv);
              $("#video-appear-here").prepend(videoDiv);
             
 
