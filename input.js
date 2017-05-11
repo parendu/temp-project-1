@@ -22,7 +22,7 @@
         part: 'snippet',
         q: searchTerm.
         //maxResults: 3,
-        order: "viewCount"
+        //order: "viewCount"
         
        });
       //execute request
