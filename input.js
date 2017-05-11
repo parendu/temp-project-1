@@ -28,14 +28,14 @@
       //execute request
       request.execute(function(response){
            var results = response.request;
-           for (var i = 0; i < results.length; i++){
-               console.log(results[i].item.id.videoId);
+           for (var i = 0; i < results.items.length; i++){
+               console.log(results.items[i].item.id.videoId);
 
                //$("#videos-appear-here").append()
 
 
            } //for loop
 
-      });
+      }); //response
 
-    });
+    });  //search button
