@@ -35,17 +35,18 @@
            for (var i = 0; i < results.length; i++){
                console.log(results[i]);
              
+             var videoId = results[i].id.videoId;
+             console.log(videoId);
 
 
                 // <iframe width="560" height="315" src="https://www.youtube.com/embed/WPvGqX-TXP0" frameborder="0" allowfullscreen></iframe>
-               $("#videos-appear-here").append("video image: " + results[i].item.snippet.thumbnails.default.url);
-               $("#videos-appear-here").append("video id: " + results[i].item.id.videoId);
-               $("#videos-appear-here").append("video title: " + results[i].item.snippet.title);
+               $("#videos-appear-here").append("video image: " + results[i].snippet.thumbnails.default.url);
+               $("#videos-appear-here").append("video id: " + results[i].id.videoId);
+               $("#videos-appear-here").append("video title: " + results[i].snippet.title);
              //  $("#videos-appear-here").append("video id: " + item.id.video);
 
 
            }; //for loop
 
       }); //response
-
     });  //search button
