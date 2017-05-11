@@ -28,13 +28,18 @@
       //execute request
       request.execute(function(response){
            var results = response.request;
-           for (var i = 0; i < results.items.length; i++){
-               console.log(results.items[i].item.id.videoId);
 
-               //$("#videos-appear-here").append()
+          each(results.items, function(index, item) {
+           //for (var i = 0; i < result.items.length; i++){
+               console.log(item.id.videoId);
+
+               $("#videos-appear-here").append("video image: " + item.snippet.thumbnails.default.url);
+               $("#videos-appear-here").append("video id: " + item.id.videoId);
+               $("#videos-appear-here").append("video title: " + item.snippet.title);
+               $("#videos-appear-here").append("video id: " + item.id.video);
 
 
-           } //for loop
+           }); //for loop
 
       }); //response
 
