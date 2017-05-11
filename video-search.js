@@ -29,7 +29,7 @@
       //execute request
       request.execute(function(response){
         console.log(response);
-        
+           $(""#video-appear-here"").empty();
            var results = response.items;
         console.log(results);
           
@@ -50,9 +50,9 @@
 
 
              //create class image for each video        
-             var videoDiv = $("<div class = 'col-sm-3 item' >");
+             var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
              //create favorite buttton
-             var favButton = $("<button type='button' id=" + videoId + "value='click' class='btn btn-default btn-sm'>");
+             var favButton = $("<button type='button' id=" + videoId +  "value='click' class='btn btn-default btn-sm'>");
              var addSpan = $("<span>");
              addSpan.addClass('glyphicon glyphicon-star')
              addSpan.attr("aria-hidden", 'true'); 
