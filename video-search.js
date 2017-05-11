@@ -19,7 +19,7 @@
 
       //prepare request
       var request = gapi.client.youtube.search.list({
-        part: 'snippet',
+        part: 'snippet', 'statistics',
         q: searchTerm,
         maxResults: 3,
         order: "viewCount",
@@ -41,13 +41,10 @@
              var imageUrl = results[i].snippet.thumbnails.default.url;
              console.log(imageUrl);
              var videoTitle = results[i].snippet.title;
+             console.log(videoTitle);
 
 
-                // <iframe width="560" height="315" src="https://www.youtube.com/embed/WPvGqX-TXP0" frameborder="0" allowfullscreen></iframe>
-               $("#videos-appear-here").append("video image: " + imageUrl);
-               $("#videos-appear-here").append("video id: " + videoId);
-               $("#videos-appear-here").append("video title: " + videoTitle);
-             //  $("#videos-appear-here").append("video id: " + item.id.video);
+
 
 
            }; //for loop
