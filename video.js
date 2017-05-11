@@ -43,7 +43,7 @@
      
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
-    document.getElementById('response').innerHTML += responseString;
+    document.getElementById('videos-appear-here').innerHTML += responseString;
 }
 
 
