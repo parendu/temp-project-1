@@ -21,7 +21,7 @@
       var request = gapi.client.youtube.search.list({
         part: 'snippet',
         q: searchTerm,
-        maxResults: 3,
+        maxResults: 10,
         order: "viewCount",
         type: "video"
         
@@ -29,7 +29,7 @@
       //execute request
       request.execute(function(response){
         console.log(response);
-           $(""#video-appear-here"").empty();
+           $("#video-appear-here").empty();
            var results = response.items;
         console.log(results);
           
