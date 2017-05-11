@@ -18,6 +18,7 @@
         var searchTerm = $('#search-term').val();
         console.log(searchTerm);
         search(searchTerm);
+        showResponse(response);
 
       });
 
