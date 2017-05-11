@@ -58,7 +58,7 @@
              addSpan.attr("aria-hidden", 'true'); 
              //create image element
              
-             var videoThumb = $("<div class='thumbnail' style='width:200px, height=300px'>");
+             var videoThumb = $("<div class='thumbnail' width='150px' height='200px'>");
              var videoImage = $("<img>");
              
 
