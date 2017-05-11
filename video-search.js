@@ -60,8 +60,9 @@
              //set data-videoid
              videoImage.attr("src", imageUrl);
              videoImage.attr("data-videoId", videoId);
+             videoImage.attr("value", 'click');
              //create favorite buttton
-             var favButton = $("<button type='button' id=" + videoId + "class='btn btn-default btn-sm'>");
+             var favButton = $("<button type='button' id=" + videoId + "value='click' class='btn btn-default btn-sm'>");
              var addSpan = $("<span>");
              addSpan.addClass('glyphicon glyphicon-star')
              addSpan.attr("aria-hidden", 'true'); 
