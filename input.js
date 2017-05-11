@@ -32,7 +32,7 @@
            var results = response.items;
         console.log(results);
           //each(results.items, function(index, item) {
-           for (var i = 0; i < results.items.length; i++){
+           for (var i = 0; i < results.length; i++){
                console.log(results.items[i]);
                console.log(item.id.videoId);
 
