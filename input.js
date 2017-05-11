@@ -21,8 +21,9 @@
       var request = gapi.client.youtube.search.list({
         part: 'snippet',
         q: searchTerm
-        //maxResults: 3,
-        //order: "viewCount"
+        maxResults: 3,
+        order: "viewCount",
+        type: "video"
         
        });
       //execute request
@@ -37,6 +38,8 @@
              
              var videoId = results[i].id.videoId;
              console.log(videoId);
+             var imageUrl = results[i].snippet.thumbnails.default.url;
+             var videoTitle = results[i].snippet.title;
 
 
                 // <iframe width="560" height="315" src="https://www.youtube.com/embed/WPvGqX-TXP0" frameborder="0" allowfullscreen></iframe>
