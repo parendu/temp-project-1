@@ -39,12 +39,24 @@
          //set results with resopnse data
         var results = response.data;
       console.log("response" + results);
-     var videoId = results[0].items.id.videoId;
-     var videoTitle = results[0].items.snippet.title;
-     var videoThumbnail = results[0].items.snippet.thumbnails.default.url;
-     console.log(videoId);
-     console.log(videoTitle);
-     console.log(videoThumbnail);
+     
+function showResponse(response) {
+    var responseString = JSON.stringify(response, '', 2);
+    document.getElementById('response').innerHTML += responseString;
+}
+
+
+
+
+
+
+
+     // var videoId = results[0].items.id.videoId;
+     // var videoTitle = results[0].items.snippet.title;
+     // var videoThumbnail = results[0].items.snippet.thumbnails.default.url;
+     // console.log(videoId);
+     // console.log(videoTitle);
+     // console.log(videoThumbnail);
 
 
 
@@ -93,24 +105,4 @@
 
 
 
-// //       //create the function to display content   
-//          function resultResponse(response) {
-         
-//             var str = JSON.stringify(response, '', 2);
-//            console.log(str);
-         
-//          $('#videos-appear-here').html('<pre>' + str + '</pre>');
-
-
-//          };
-
-
-// // // // Called automatically with the response of the YouTube API request.
-// // function onSearchResponse(response) {
-//       resultResponse(response);
-//  // };
-
-
-
  
-//   
