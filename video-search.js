@@ -73,7 +73,7 @@
              // addSpan.attr("aria-hidden", 'true'); 
              //prepend  video image to videoDiv
              favButton.append(addSpan);
-             videoDiv.prepend(favButton);
+             videoDiv.append(favButton);
              videoDiv.prepend(p);
              videoDiv.prepend(videoImage);
              
