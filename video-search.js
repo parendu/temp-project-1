@@ -66,7 +66,7 @@
              addSpan.addClass('glyphicon glyphicon-star')
              addSpan.attr("aria-hidden", 'true'); 
              //prepend  video image to videoDiv
-             videoDiv.append(favButton);
+             videoDiv.append(addSpan);
              videoDiv.prepend(p);
              videoDiv.prepend(videoImage);
              
