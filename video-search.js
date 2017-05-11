@@ -42,6 +42,22 @@
              console.log(imageUrl);
              var videoTitle = results[i].snippet.title;
              console.log(videoTitle);
+             
+             //create class image for each video        
+             var videoDiv = $("<div class = 'image' >");
+             //create image element
+             var videoImage = $("<image>");
+             //add class to image
+             videoImage.addClass('video-image');
+             
+             //set src image
+             //set data-videoid
+             videoImage.attr("src", imageUrl);
+             videoImage.attr("data-videoId", videoId);
+             //prepend  video image to videoDiv
+             videoDiv.prepend(videoImage);
+             $("#videos-appears-here").prepend(videoDiv);
+
 
 
 
