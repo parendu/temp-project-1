@@ -26,10 +26,12 @@
         type: "video"
         
        });
+
+       $("#video-appear-here").empty();
       //execute request
       request.execute(function(response){
         console.log(response);
-           $("#video-appear-here").empty();
+          
            var results = response.items;
         console.log(results);
           
