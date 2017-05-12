@@ -62,7 +62,7 @@ $(document).ready(function(){
              
            }
            else {
-            console.log(videoTitleFull);
+            var videoTitle = videoTitleFull;
            }
              var p = $("<p>").text(videoTitle);
              
