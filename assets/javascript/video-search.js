@@ -78,7 +78,7 @@ $(document).ready(function(){
              var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
              
              //create favorite buttton
-             var favButton = $("<button type='button' id=" + videoId + "value='click' margin='5px' class='btn btn-default btn-sm'>");
+             var favButton = $("<button type='button' id=" + videoId + "value='click' margin-bottom='5px' class='btn btn-default btn-sm'>");
 
              var addSpan = $("<span>");
              addSpan.addClass('glyphicon glyphicon-star')
@@ -122,11 +122,11 @@ $(document).ready(function(){
 
          }; //for loop
 
-         equalHeight($(".thumbnail")); 
+          
 
      }); //response
 
-   
+   equalHeight($(".thumbnail"));
 
  }); //search button
    function equalHeight(group) {    
