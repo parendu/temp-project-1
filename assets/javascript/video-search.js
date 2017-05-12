@@ -67,7 +67,7 @@
              addSpan.attr("aria-hidden", 'true');
              //create image element
 
-             var videoThumb = $("<div class='thumbnail' text-align='left'>");
+             var videoThumb = $("<div class='thumbnail'");
              var videoImage = $("<img>");
 
 
@@ -84,8 +84,8 @@
              //prepend  video image to videoDiv
              videoThumb.append(videoImage);
              favButton.append(addSpan);
-             videoThumb.append(favButton);
-             videoThumb.prepend(p);
+             videoThumb.prepend(favButton);
+             videoThumb.append(p);
              videoDiv.prepend(videoThumb);
 
              $("#video-appear-here").prepend(videoDiv);
@@ -98,3 +98,6 @@
 
      }); //response
  }); //search button
+
+ //
+sdfdsf
