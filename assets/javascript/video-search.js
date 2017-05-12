@@ -48,8 +48,8 @@ $(document).ready(function(){
             // console.log(videoId);
              var imageUrl = results[i].snippet.thumbnails.default.url;
              console.log(imageUrl);
-            // var videoTitleFull = results[i].snippet.title;
-             console.log(videoTitleFull);
+            var videoTitleFull = results[i].snippet.title;
+             //console.log(videoTitleFull);
 
              //var textDiv = $("<div class='middle text'>" + videoTitle + "</div>");
 
