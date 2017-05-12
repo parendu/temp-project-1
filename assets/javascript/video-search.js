@@ -53,18 +53,12 @@ $(document).ready(function(){
 
              //var textDiv = $("<div class='middle text'>" + videoTitle + "</div>");
 
-             
-
-              //mouseover display full title
-             // $( ".thumbnail" )
-             //      .mouseover(function() {
-             //    $( this ).find( "p" ).text(videoTitleFull);
-             //  })
+            
 
              //trim video title so it display properly
              
-             if (videoTitleFull.length > 30) {
-             var videoTitle = (videoTitleFull.slice(0, 30) + "...");
+             if (videoTitleFull.length > 40) {
+             var videoTitle = (videoTitleFull.slice(0, 40) + "...");
            }
              var p = $("<p>").text(videoTitle);
 
@@ -104,6 +98,13 @@ $(document).ready(function(){
              videoThumb.prepend(favButton);
              videoThumb.append(p);
              videoDiv.prepend(videoThumb);
+
+
+              mouseover display full title
+             $( ".thumbnail" )
+                  .mouseover(function() {
+                $( this ).find( "p" ).text(videoTitleFull);
+              })
 
              $("#video-appear-here").prepend(videoDiv);
 
