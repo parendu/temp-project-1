@@ -9,6 +9,8 @@
 
  };
 
+$(document).ready(function(){
+
  //capture search-term text box when user click search-button
  $("#search-button").on("click", function(event) {
      event.preventDefault();
@@ -41,24 +43,35 @@
          for (var i = 0; i < results.length; i++) {
              console.log(results[i]);
 
+             //get the data videoId, imageUrl and videoTitle from results
              var videoId = results[i].id.videoId;
              console.log(videoId);
              var imageUrl = results[i].snippet.thumbnails.default.url;
              console.log(imageUrl);
-             var videoTitle = results[i].snippet.title;
+             var videoTitleFull = results[i].snippet.title;
              console.log(videoTitle);
 
              //var textDiv = $("<div class='middle text'>" + videoTitle + "</div>");
 
+             
+
+              //mouseover display full title
+             $( ".thumbnail" )
+                  .mouseover(function() {
+                $( this ).find( "p" ).text(videoTitleFull);
+              })
+             //trim video title so it display properly
+             
              videoTitle = (videoTitle.slice(0, 30) + "...");
-             var p = $("<p>").text(videoTitle);
+             var p = $("<p>").text(videoTitleFull);
 
 
-
+             //border the video-display container
              $('#video-display').addClass('bordered');
 
              //create class image for each video        
              var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
+             
              //create favorite buttton
              var favButton = $("<button type='button' id=" + videoId + "value='click' margin='5px' class='btn btn-default btn-sm'>");
 
@@ -82,6 +95,7 @@
 
 
              //prepend  video image to videoDiv
+             videoThumb.attr("<a href=https://www.youtube.com/watch?v='videoId'>");
              videoThumb.append(videoImage);
              favButton.append(addSpan);
              videoThumb.prepend(favButton);
@@ -99,4 +113,6 @@
      }); //response
  }); //search button
 
- //
+}); //document.ready
+
+ 
