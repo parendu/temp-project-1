@@ -56,13 +56,16 @@ $(document).ready(function(){
              
 
               //mouseover display full title
-             $( ".thumbnail" )
-                  .mouseover(function() {
-                $( this ).find( "p" ).text(videoTitleFull);
-              })
+             // $( ".thumbnail" )
+             //      .mouseover(function() {
+             //    $( this ).find( "p" ).text(videoTitleFull);
+             //  })
+
              //trim video title so it display properly
              
+             if (videoTitleFull.length > 30) {
              var videoTitle = (videoTitleFull.slice(0, 30) + "...");
+           }
              var p = $("<p>").text(videoTitle);
 
 
