@@ -78,7 +78,7 @@ $(document).ready(function(){
              var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
              
              //create favorite buttton
-             var favButton = $("<button type='button' id=" + videoId + "value='click' margin-bottom='5px' class='btn btn-default btn-sm'>");
+             var favButton = $("<button type='button' id=" + videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm'>");
 
              var addSpan = $("<span>");
              addSpan.addClass('glyphicon glyphicon-star')
@@ -140,6 +140,24 @@ $(document).ready(function(){
    //  group.each(function() { $(this).height(tallest); });
    //  } 
 
+
+//$(".video-image").on("click", function(){
+//
+        console.log( https://www.youtube.com/watch?v='videoId)
+     <iframe width="420" height="315"
+      src="https://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1">
+      </iframe>
+            //border the video-display container
+             $('#video-display').addClass('bordered');
+
+
+
+
+
+
+
+
+// })
  
 
 }); //document.ready
