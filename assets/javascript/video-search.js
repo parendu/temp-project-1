@@ -45,14 +45,17 @@
              
              //var textDiv = $("<div class='middle text'>" + videoTitle + "</div>");
 
+                videoTitle = (videoTitle.slice(0, 18) + "...");
                 var p = $("<p>").text(videoTitle);
-        
+                 
+                $(".p").slice(0, 20) ;
 
 
              //create class image for each video        
              var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
              //create favorite buttton
              var favButton = $("<button type='button' id=" + videoId +  "value='click' margin='5px' class='btn btn-default btn-sm'>");
+             
              var addSpan = $("<span>");
              addSpan.addClass('glyphicon glyphicon-star')
              addSpan.attr("aria-hidden", 'true');
@@ -70,8 +73,7 @@
              videoImage.attr("src", imageUrl);
              videoImage.attr("data-videoId", videoId);
              videoImage.attr("value", 'click');
-             videoImage.attr("width", '85px');
-             videoImage.attr("height", '115px');
+             
              
              //prepend  video image to videoDiv
              videoThumb.append(videoImage);
