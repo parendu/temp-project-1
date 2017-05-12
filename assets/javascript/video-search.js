@@ -62,6 +62,7 @@ $(document).ready(function(){
              
            }
            else {
+
             var videoTitle = videoTitleFull;
            }
              var p = $("<p>").text(videoTitle);
@@ -121,6 +122,8 @@ $(document).ready(function(){
 
          }; //for loop
 
+         equalHeight($(".thumbnail")); 
+
      }); //response
 
    
@@ -137,7 +140,7 @@ $(document).ready(function(){
     group.each(function() { $(this).height(tallest); });
     } 
 
-  equalHeight($(".thumbnail")); 
+ 
 
 }); //document.ready
 
