@@ -45,10 +45,10 @@ $(document).ready(function(){
 
              //get the data videoId, imageUrl and videoTitle from results
              var videoId = results[i].id.videoId;
-             console.log(videoId);
+            // console.log(videoId);
              var imageUrl = results[i].snippet.thumbnails.default.url;
              console.log(imageUrl);
-             var videoTitleFull = results[i].snippet.title;
+            // var videoTitleFull = results[i].snippet.title;
              console.log(videoTitleFull);
 
              //var textDiv = $("<div class='middle text'>" + videoTitle + "</div>");
@@ -61,6 +61,9 @@ $(document).ready(function(){
              var videoTitle = (videoTitleFull.slice(0, 40) + "...");
            }
              var p = $("<p>").text(videoTitle);
+             console.log(videoId);
+             console.log(videoTitleFull);
+             console.log(videoTitle);
 
 
              //border the video-display container
@@ -92,7 +95,7 @@ $(document).ready(function(){
 
 
              //prepend  video image to videoDiv
-             videoThumb.attr("<a href=https://www.youtube.com/watch?v='videoId'>");
+             videoImage.attr("<a href=https://www.youtube.com/watch?v='videoId'>");
              videoThumb.append(videoImage);
              favButton.append(addSpan);
              videoThumb.prepend(favButton);
@@ -101,10 +104,10 @@ $(document).ready(function(){
 
 
             //  mouseover display full title
-             $( ".thumbnail" )
-                  .mouseover(function() {
-                $( this ).find( "p" ).text(videoTitleFull);
-              })
+             // $( ".thumbnail" )
+             //      .mouseover(function() {
+             //    $( this ).find( "p" ).text(videoTitleFull);
+             //  })
 
              $("#video-appear-here").prepend(videoDiv);
 
@@ -115,6 +118,20 @@ $(document).ready(function(){
          }; //for loop
 
      }); //response
+
+     function equalHeight(group) {    
+    var tallest = 0;    
+    group.each(function() {       
+        var thisHeight = $(this).height();       
+        if(thisHeight > tallest) {          
+            tallest = thisHeight;       
+        }    
+    });    
+    group.each(function() { $(this).height(tallest); });
+    } 
+
+  equalHeight($(".thumbnail")); 
+
  }); //search button
 
 }); //document.ready
