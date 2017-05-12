@@ -141,7 +141,7 @@ $(document).ready(function(){
    //  } 
 
 
-      $(".video-image").on("click", function(){
+      $(".video-image").on("click", 'img', function(){
 
         console.log('https://www.youtube.com/watch?v='+videoId);
         //border the video-display container
