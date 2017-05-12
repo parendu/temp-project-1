@@ -86,6 +86,9 @@ $(document).ready(function(){
              //create image element
 
              var videoThumb = $("<div class='thumbnail'>");
+             
+
+             
              var videoImage = $("<img>");
 
 
@@ -97,10 +100,11 @@ $(document).ready(function(){
              videoImage.attr("src", imageUrl);
              videoImage.attr("data-videoId", videoId);
              videoImage.attr("value", 'click');
+             vadioImage.att("onclick", 'https://www.youtube.com/watch?v='+videoId);
 
 
              //prepend  video image to videoDiv
-             videoImage.attr("<a href=https://www.youtube.com/watch?v='videoId'>");
+             
              videoThumb.append(videoImage);
              favButton.append(addSpan);
              videoThumb.prepend(favButton);
