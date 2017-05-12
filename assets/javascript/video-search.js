@@ -45,14 +45,15 @@
              
              //var textDiv = $("<div class='middle text'>" + videoTitle + "</div>");
 
-                videoTitle = (videoTitle.slice(0, 35) + "...");
+                videoTitle = (videoTitle.slice(0, 36) + "...");
                 var p = $("<p>").text(videoTitle);
                  
                 
 
+             $('#video-display').addClass('bordered');
 
              //create class image for each video        
-             var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px' border-color='blue' border-size='solid'>");
+             var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
              //create favorite buttton
              var favButton = $("<button type='button' id=" + videoId +  "value='click' margin='5px' class='btn btn-default btn-sm'>");
              

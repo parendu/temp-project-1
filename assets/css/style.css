@@ -35,12 +35,10 @@
     }
     .thumbnails {
      text-align: left;
-
-
     }
-    #video-display {
-      
-      border: #cdcdcd medium solid;
-    }
+    
+   .bordered {
+    border: 1px solid #cc3;
+  }
 
  
