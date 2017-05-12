@@ -122,11 +122,11 @@ $(document).ready(function(){
 
          }; //for loop
 
-          
+         equalHeight($(".thumbnail")); 
 
      }); //response
 
-   equalHeight($(".thumbnail"));
+   
 
  }); //search button
    function equalHeight(group) {    
