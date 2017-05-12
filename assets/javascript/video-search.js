@@ -145,14 +145,7 @@ $(document).ready(function(){
    //  } 
 
 
-      $(".video-image").on("click", 'img', function(){
-
-        console.log('hello');
-        //border the video-display container
-             $('#video-display').addClass('bordered');
-
-
-      });
+ 
 
      // <iframe width="420" height="315" src="https://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"
      //  </iframe>
