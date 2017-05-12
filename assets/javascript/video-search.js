@@ -52,13 +52,13 @@
              //create class image for each video        
              var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
              //create favorite buttton
-             var favButton = $("<button type='button' id=" + videoId +  "value='click' class='btn btn-default btn-sm'>");
+             var favButton = $("<button type='button' id=" + videoId +  "value='click' margin='5px' class='btn btn-default btn-sm'>");
              var addSpan = $("<span>");
              addSpan.addClass('glyphicon glyphicon-star')
-             addSpan.attr("aria-hidden", 'true'); 
-             //create image element
+             addSpan.attr("aria-hidden", 'true');
+            //create image element
              
-             var videoThumb = $("<div class='thumbnail' width='150px' height='200px'>");
+             var videoThumb = $("<div class='thumbnail' max-width='150px' max-height='200px'>");
              var videoImage = $("<img>");
              
 
