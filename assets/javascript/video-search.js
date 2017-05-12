@@ -59,11 +59,15 @@ $(document).ready(function(){
              
              if (videoTitleFull.length > 40) {
              var videoTitle = (videoTitleFull.slice(0, 40) + "...");
+             console.log(videoTitle);
+           }
+           else {
+            console.log(videoTitleFull);
            }
              var p = $("<p>").text(videoTitle);
-             console.log(videoId);
-             console.log(videoTitleFull);
-             console.log(videoTitle);
+             
+             
+             
 
 
              //border the video-display container
