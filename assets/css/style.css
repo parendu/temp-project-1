@@ -35,6 +35,10 @@
     }
     .thumbnails {
      text-align: left;
+     min-height: 150px;
+     min-width: 100px;
+     max-width: 100px;
+     min-height: 150px;
     }
 
    .bordered {

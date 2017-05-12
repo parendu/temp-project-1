@@ -15,7 +15,7 @@ $(document).ready(function(){
  $("#search-button").on("click", function(event) {
      event.preventDefault();
 
-     $(".collapse in").hide();
+     $("#company-name").hide();
 
      console.log("hello");
      var searchTerm = $('#search-term').val();
