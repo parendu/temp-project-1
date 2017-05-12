@@ -62,8 +62,8 @@ $(document).ready(function(){
               })
              //trim video title so it display properly
              
-             videoTitle = (videoTitle.slice(0, 30) + "...");
-             var p = $("<p>").text(videoTitleFull);
+             var videoTitle = (videoTitleFull.slice(0, 30) + "...");
+             var p = $("<p>").text(videoTitle);
 
 
              //border the video-display container
