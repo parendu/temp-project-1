@@ -119,7 +119,10 @@ $(document).ready(function(){
 
      }); //response
 
-     function equalHeight(group) {    
+   
+
+ }); //search button
+   function equalHeight(group) {    
     var tallest = 0;    
     group.each(function() {       
         var thisHeight = $(this).height();       
@@ -131,8 +134,6 @@ $(document).ready(function(){
     } 
 
   equalHeight($(".thumbnail")); 
-
- }); //search button
 
 }); //document.ready
 
