@@ -24,7 +24,7 @@
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-      padding: 60px 50px;
+      padding: 0px 50px;
   }
   .bg-grey {
       background-color: #f6f6f6;
@@ -36,7 +36,7 @@
     .thumbnails {
      text-align: left;
     }
-    
+
    .bordered {
     border: 1px solid #cc3;
   }
