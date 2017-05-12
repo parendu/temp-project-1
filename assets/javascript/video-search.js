@@ -100,7 +100,7 @@ $(document).ready(function(){
              videoDiv.prepend(videoThumb);
 
 
-              mouseover display full title
+            //  mouseover display full title
              $( ".thumbnail" )
                   .mouseover(function() {
                 $( this ).find( "p" ).text(videoTitleFull);
