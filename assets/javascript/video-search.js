@@ -52,7 +52,7 @@
 
 
              //create class image for each video        
-             var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
+             var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px' border-color='blue' border-size='solid'>");
              //create favorite buttton
              var favButton = $("<button type='button' id=" + videoId +  "value='click' margin='5px' class='btn btn-default btn-sm'>");
              
