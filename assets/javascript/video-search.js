@@ -47,7 +47,7 @@
              
              //var textDiv = $("<div class='middle text'>" + videoTitle + "</div>");
 
-                videoTitle = (videoTitle.slice(0, 36) + "...");
+                videoTitle = (videoTitle.slice(0, 30) + "...");
                 var p = $("<p>").text(videoTitle);
                  
                 
