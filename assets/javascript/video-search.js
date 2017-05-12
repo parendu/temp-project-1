@@ -143,7 +143,7 @@ $(document).ready(function(){
 
       $(".video-image").on("click", 'img', function(){
 
-        console.log('https://www.youtube.com/watch?v='+videoId);
+        console.log('hello');
         //border the video-display container
              $('#video-display').addClass('bordered');
 
