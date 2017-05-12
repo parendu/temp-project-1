@@ -28,7 +28,8 @@
   }
   .bg-grey {
       background-color: #f6f6f6;
-    };
+    }
+
   p {
     font-size: 10px;
     }
@@ -38,8 +39,8 @@
 
     }
     #video-display {
-      border-width: 2px;
-      border-color: blue;
+      
+      border: #cdcdcd medium solid;
     }
 
  

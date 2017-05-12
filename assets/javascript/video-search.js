@@ -45,10 +45,10 @@
              
              //var textDiv = $("<div class='middle text'>" + videoTitle + "</div>");
 
-                videoTitle = (videoTitle.slice(0, 18) + "...");
+                videoTitle = (videoTitle.slice(0, 35) + "...");
                 var p = $("<p>").text(videoTitle);
                  
-                $(".p").slice(0, 20) ;
+                
 
 
              //create class image for each video        
@@ -61,7 +61,7 @@
              addSpan.attr("aria-hidden", 'true');
             //create image element
              
-             var videoThumb = $("<div class='thumbnail'>");
+             var videoThumb = $("<div class='thumbnail' text-align='left'>");
              var videoImage = $("<img>");
              
 
