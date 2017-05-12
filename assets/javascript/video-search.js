@@ -100,7 +100,7 @@ $(document).ready(function(){
              videoImage.attr("src", imageUrl);
              videoImage.attr("data-videoId", videoId);
              videoImage.attr("value", 'click');
-             vadioImage.att("onclick", 'https://www.youtube.com/watch?v='+videoId);
+             vadioImage.attr("onclick", 'https://www.youtube.com/watch?v='+videoId);
 
 
              //prepend  video image to videoDiv
