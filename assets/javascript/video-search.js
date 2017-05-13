@@ -209,7 +209,7 @@ $(document).ready(function(){
                 var href = $(this).attr('data-href');
                  console.log("src: " + href);
                 // maybe use an ID instead
-                $('embed').attr('src', href);
+                $('.youtube-player').attr('src', href);
              });
      
 
