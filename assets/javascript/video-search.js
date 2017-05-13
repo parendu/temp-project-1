@@ -201,13 +201,13 @@ $(document).ready(function(){
    //  } 
 
 //function to start video
-
+      
    
              $(document).on('click', '.play-button', function (e) {
                 console.log("clicked")
                 e.preventDefault();
                 var href = $(this).attr('data-href');
-                 console.log("src: " + href);
+                 console.log("src: " + href + ""&output=embed"");
                 // maybe use an ID instead
                 $('iframe').attr('src', href);
              });
