@@ -85,7 +85,7 @@ $(document).ready(function(){
              addSpan.attr("aria-hidden", 'true');
              
              //create play buttton
-             var playButton = $("<button type='button' id=" "name=" +videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm'>");
+             var playButton = $("<button type='button'  name=" +videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm'>");
 
              var playSpan = $("<span>");
              playSpan.addClass('glyphicon glyphicon-star')
