@@ -159,13 +159,13 @@ $(document).ready(function(){
 
               // Phase 2 - Move to outer (global) scope and target all play buttons
 
-             $(document).on('click', 'play-button', function (e) {
-                e.preventDefault();
-                var href = $(this).attr('href');
-                 console.log("src: " + href);
-                // maybe use an ID instead
-                $('embed').attr('src', href);
-             });
+             // $(document).on('click', 'play-button', function (e) {
+             //    e.preventDefault();
+             //    var href = $(this).attr('href');
+             //     console.log("src: " + href);
+             //    // maybe use an ID instead
+             //    $('embed').attr('src', href);
+             // });
             
 
             //  mouseover display full title
@@ -202,20 +202,14 @@ $(document).ready(function(){
 
 //function to start video
 
-   // function startVideo() {
-   //    $(".play-button").on("click", function(){
-   //        console.log("hello: "+ videoId);
-
-
-   //    });
-   //  }
-
-     // <iframe width="420" height="315" src="https://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"
-     //  </iframe>
-     //        //border the video-display container
-     //         $('#video-display').addClass('bordered');
-
-   // startVideo();
+   
+             $(document).on('click', 'play-button', function (e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+                 console.log("src: " + href);
+                // maybe use an ID instead
+                $('embed').attr('src', href);
+             });
      
 
 
