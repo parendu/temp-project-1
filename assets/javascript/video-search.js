@@ -118,6 +118,7 @@ $(document).ready(function(){
              videoThumb.append(videoImage);
              favButton.append(addSpan);
              videoThumb.prepend(favButton);
+             playButton.append(playSpan);
              playButton.append(playA);
              videoThumb.prepend(playButton);
              videoThumb.append(p);
