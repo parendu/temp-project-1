@@ -85,8 +85,9 @@ $(document).ready(function(){
              addSpan.attr("aria-hidden", 'true');
              
              //create play buttton
+             
+             
              var playButton = $("<button type='button'  name=" +videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm'>");
-
              var playSpan = $("<span>");
              playSpan.addClass('glyphicon glyphicon-play')
              playSpan.attr("aria-hidden", 'true');
@@ -117,9 +118,12 @@ $(document).ready(function(){
              
              videoThumb.append(videoImage);
              favButton.append(addSpan);
+             
+             playA.append(playButton);
+             playA.append(playSpan);
+            
+
              videoThumb.prepend(favButton);
-             playButton.append(playSpan);
-             playButton.append(playA);
              videoThumb.prepend(playButton);
              videoThumb.append(p);
              videoDiv.prepend(videoThumb);
