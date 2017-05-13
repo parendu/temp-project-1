@@ -25,7 +25,7 @@ $(document).ready(function(){
      //prepare request
      var request = gapi.client.youtube.search.list({
          part: 'snippet',
-         q: searchTerm,
+         q: searchTerm +" tutorial",
          maxResults: 8,
          order: "viewCount",
          type: "video"
