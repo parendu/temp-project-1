@@ -91,6 +91,7 @@ $(document).ready(function(){
              var playSpan = $("<span>");
              playSpan.addClass('glyphicon glyphicon-play')
              playSpan.attr("aria-hidden", 'true');
+             
              var playA = $("<a>");
              playA.addClass('play-button');
              playA.attr("href", 'https://www.youtube.com/watch?v=' + videoId);
@@ -124,7 +125,7 @@ $(document).ready(function(){
             
 
              videoThumb.prepend(favButton);
-             videoThumb.prepend(playButton);
+             videoThumb.prepend(playA);
              videoThumb.append(p);
              videoDiv.prepend(videoThumb);
 
