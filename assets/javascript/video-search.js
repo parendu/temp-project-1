@@ -172,7 +172,7 @@ $(document).ready(function(){
 //function to start video
       
    
-             $(document).on('click', '.play-button video-image', function (e) {
+             $(document).on('click', '.play-button,.video-image', function (e) {
                 console.log("clicked")
                 e.preventDefault();
                 var href = $(this).attr('data-href');
