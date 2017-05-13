@@ -163,7 +163,7 @@ $(document).ready(function(){
    //  } 
 
 
-      $(".play-button")on("click", function(){
+      $(".play-button").on("click", function(){
           console.log("hello: "+ videoId);
 
 
