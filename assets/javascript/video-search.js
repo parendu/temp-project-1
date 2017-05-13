@@ -103,6 +103,7 @@ $(document).ready(function(){
 
                 // maybe use an ID instead
                 $('embed').attr('src', href);
+                console.log("href: "+ href);
              });
 
              /* Phase 2 - Move to outer (global) scope and target all play buttons
