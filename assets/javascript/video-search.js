@@ -95,8 +95,26 @@ $(document).ready(function(){
              var playA = $("<a>");
              playA.addClass('play-button');
              playA.attr("href", 'https://www.youtube.com/watch?v=' + videoId);
-             playA.attr("target", 'video-play');
+             // playA.attr("target", 'video-play');
 
+             playA.on('click', function (e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+
+                // maybe use an ID instead
+                $('embed').attr('src', href);
+             });
+
+             /* Phase 2 - Move to outer (global) scope and target all play buttons
+
+             $(document).on('click', 'play-button video-image', function (e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+
+                // maybe use an ID instead
+                $('embed').attr('src', href);
+             });
+            */
 
              //create image element
              var videoThumb = $("<div class='thumbnail'>");
