@@ -39,6 +39,8 @@
      width: 100px;
      margin-top: 10px;
     overflow: hidden;
+    padding-bottom: 10px;
+    border-width: 0px;
     }
 
    .bordered {
