@@ -92,9 +92,14 @@ $(document).ready(function(){
              playSpan.addClass('glyphicon glyphicon-play')
              playSpan.attr("aria-hidden", 'true');
              
-             var playA = $("<a>");
-             playA.addClass('play-button');
-             playA.attr("href", 'https://www.youtube.com/watch?v=' + videoId);
+             //adding href to span
+
+             playSpan.attr("href", 'https://www.youtube.com/watch?v=' + videoId);
+
+             //commenting a link 
+             // var playA = $("<a>");
+             // playA.addClass('play-button');
+             // playA.attr("href", 'https://www.youtube.com/watch?v=' + videoId);
              // playA.attr("target", 'video-play');
              
 
