@@ -87,7 +87,7 @@ $(document).ready(function(){
              //create play buttton
              
              
-             var playButton = $("<button type='button'  name=" +videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm'>");
+             var playButton = $("<button type='button'  name=" +videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm play-button'>");
              var playSpan = $("<span>");
              playSpan.addClass('glyphicon glyphicon-play')
              playSpan.attr("aria-hidden", 'true');
@@ -204,6 +204,7 @@ $(document).ready(function(){
 
    
              $(document).on('click', '.play-button', function (e) {
+                console.log("clicked")
                 e.preventDefault();
                 var href = $(this).attr('href');
                  console.log("src: " + href);
