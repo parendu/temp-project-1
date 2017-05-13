@@ -147,7 +147,7 @@ $(document).ready(function(){
              videoThumb.append(videoImage);
              favButton.append(addSpan);
              
-             playButton.append(playA);
+             //playButton.append(playA);
              playButton.append(playSpan);
             
 
