@@ -138,7 +138,8 @@ $(document).ready(function(){
              videoImage.attr("src", imageUrl);
              videoImage.attr("data-videoId", videoId);
              videoImage.attr("value", "click");
-             videoImage.attr("href", 'https://www.youtube.com/watch?v='+videoId);
+             videoImage.attr("href", 'https://www.youtube.com/embed/'+videoId);
+            // videoImage.attr("href", 'https://www.youtube.com/watch?v='+videoId);
              //videoImage.append("<a href=https://www.youtube.com/watch?v="+ videoId + " target='video-play'");
 
 
@@ -207,7 +208,7 @@ $(document).ready(function(){
                 console.log("clicked")
                 e.preventDefault();
                 var href = $(this).attr('data-href');
-                 console.log("src: " + href + "&output=embed");
+                 console.log("src: " + href);
                 // maybe use an ID instead
                 $('iframe').attr('src', href);
              });
