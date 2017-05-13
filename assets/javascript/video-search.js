@@ -96,15 +96,7 @@ $(document).ready(function(){
 
              playButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
 
-             //commenting a link 
-             // var playA = $("<a>");
-             // playA.addClass('play-button');
-             // playA.attr("href", 'https://www.youtube.com/watch?v=' + videoId);
-             // playA.attr("target", 'video-play');
-             
-
-             //playA.on('click', function (e) {
-             
+           
              // $(".play-button").on('click', function (e) {
              //    e.preventDefault();
              //    var href = $(this).attr('href');
