@@ -207,7 +207,7 @@ $(document).ready(function(){
                 console.log("clicked")
                 e.preventDefault();
                 var href = $(this).attr('data-href');
-                 console.log("src: " + href + ""&output=embed"");
+                 console.log("src: " + href + "&output=embed");
                 // maybe use an ID instead
                 $('iframe').attr('src', href);
              });
