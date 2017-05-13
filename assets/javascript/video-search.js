@@ -162,7 +162,7 @@ $(document).ready(function(){
              $(document).on('click', 'play-button video-image', function (e) {
                 e.preventDefault();
                 var href = $(this).attr('href');
-
+                 console.log("src: " + href);
                 // maybe use an ID instead
                 $('embed').attr('src', href);
              });
