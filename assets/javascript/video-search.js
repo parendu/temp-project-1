@@ -96,27 +96,6 @@ $(document).ready(function(){
 
              playButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
 
-           
-             // $(".play-button").on('click', function (e) {
-             //    e.preventDefault();
-             //    var href = $(this).attr('href');
-
-             //    // maybe use an ID instead
-             //    $('embed').attr('src', href);
-             //    console.log("href: "+ href);
-             // });
-
-             /* Phase 2 - Move to outer (global) scope and target all play buttons
-
-             $(document).on('click', 'play-button video-image', function (e) {
-                e.preventDefault();
-                var href = $(this).attr('href');
-
-                // maybe use an ID instead
-                $('embed').attr('src', href);
-             });
-            */
-
              //create image element
              var videoThumb = $("<div class='thumbnail'>");
                          
@@ -193,7 +172,7 @@ $(document).ready(function(){
 //function to start video
       
    
-             $(document).on('click', '.play-button', function (e) {
+             $(document).on('click', '.play-button video-image', function (e) {
                 console.log("clicked")
                 e.preventDefault();
                 var href = $(this).attr('data-href');
