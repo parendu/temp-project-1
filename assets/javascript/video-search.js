@@ -101,7 +101,7 @@ $(document).ready(function(){
              videoImage.attr("data-videoId", videoId);
              videoImage.attr("value", "click");
             // videoImage.attr("onclick", 'https://www.youtube.com/watch?v='+videoId);
-             videoImage.append("<a href=https://www.youtube.com/watch?v="+ videoId + " target='video-play'</a>");
+             videoImage.append("<a href=https://www.youtube.com/watch?v="+ videoId + " target='video-play'>");
 
 
              //prepend  video image to videoDiv
