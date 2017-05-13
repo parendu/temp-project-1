@@ -169,10 +169,10 @@ $(document).ready(function(){
    //  group.each(function() { $(this).height(tallest); });
    //  } 
 
-//function to start video
+            //function to start video, click on play button
       
    
-             $(document).on('click', '.play-button,.video-image', function (e) {
+             $(document).on('click', '.play-button', function (e) {
                 console.log("clicked")
                 e.preventDefault();
                 var href = $(this).attr('data-href');
@@ -180,8 +180,15 @@ $(document).ready(function(){
                 // maybe use an ID instead
                 $('iframe').attr('src', href);
              });
-     
-
+            //start video, click on image
+          $(document).on('click', '.video-image', function (e) {
+                console.log("clicked")
+                e.preventDefault();
+                var href = $(this).attr('data-href');
+                 console.log("src: " + href);
+                // maybe use an ID instead
+                $('iframe').attr('src', href);
+             });
 
 
 
