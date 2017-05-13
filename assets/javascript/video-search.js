@@ -203,7 +203,7 @@ $(document).ready(function(){
 //function to start video
 
    
-             $(document).on('click', 'play-button', function (e) {
+             $(document).on('click', '.play-button', function (e) {
                 e.preventDefault();
                 var href = $(this).attr('href');
                  console.log("src: " + href);
