@@ -94,7 +94,7 @@ $(document).ready(function(){
              
              //adding href to span
 
-             playSpan.attr("href", 'https://www.youtube.com/watch?v=' + videoId);
+             playButton.attr("data-href", 'https://www.youtube.com/watch?v=' + videoId);
 
              //commenting a link 
              // var playA = $("<a>");
@@ -206,7 +206,7 @@ $(document).ready(function(){
              $(document).on('click', '.play-button', function (e) {
                 console.log("clicked")
                 e.preventDefault();
-                var href = $(this).attr('href');
+                var href = $(this).attr('data-href');
                  console.log("src: " + href);
                 // maybe use an ID instead
                 $('embed').attr('src', href);
