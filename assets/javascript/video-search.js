@@ -109,7 +109,7 @@ $(document).ready(function(){
              videoImage.attr("src", imageUrl);
              videoImage.attr("data-videoId", videoId);
              videoImage.attr("value", "click");
-             videoImage.attr("href", 'https://www.youtube.com/embed/'+videoId);
+             videoImage.attr("data-href", 'https://www.youtube.com/embed/'+videoId);
 
             // videoImage.attr("href", 'https://www.youtube.com/watch?v='+videoId);
              //videoImage.append("<a href=https://www.youtube.com/watch?v="+ videoId + " target='video-play'");
@@ -128,18 +128,6 @@ $(document).ready(function(){
              videoThumb.prepend(playButton);
              videoThumb.append(p);
              videoDiv.prepend(videoThumb);
-
-
-              // Phase 2 - Move to outer (global) scope and target all play buttons
-
-             // $(document).on('click', 'play-button', function (e) {
-             //    e.preventDefault();
-             //    var href = $(this).attr('href');
-             //     console.log("src: " + href);
-             //    // maybe use an ID instead
-             //    $('embed').attr('src', href);
-             // });
-            
 
             //  mouseover display full title
              // $( ".thumbnail" )
@@ -181,6 +169,7 @@ $(document).ready(function(){
                 $('iframe').attr('src', href);
              });
             //start video, click on image
+          
           $(document).on('click', '.video-image', function (e) {
                 console.log("clicked")
                 e.preventDefault();
@@ -189,12 +178,6 @@ $(document).ready(function(){
                 // maybe use an ID instead
                 $('iframe').attr('src', href);
              });
-
-
-
-
- 
- 
 
 }); //document.ready
 
