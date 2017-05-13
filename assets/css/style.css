@@ -47,5 +47,7 @@
   .play-button {
     float: right;
   }
-
+.favorite {
+    float: left;
+  }
  

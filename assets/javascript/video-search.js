@@ -120,12 +120,12 @@ $(document).ready(function(){
              videoThumb.append(videoImage);
              favButton.append(addSpan);
              
-             playA.append(playButton);
-             playA.append(playSpan);
+             playButton.append(playA);
+             playButton.append(playSpan);
             
 
              videoThumb.prepend(favButton);
-             videoThumb.prepend(playA);
+             videoThumb.prepend(playButton);
              videoThumb.append(p);
              videoDiv.prepend(videoThumb);
 
