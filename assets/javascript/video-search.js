@@ -94,7 +94,7 @@ $(document).ready(function(){
              
              //adding href to span
 
-             playButton.attr("data-href", 'https://www.youtube.com/watch?v=' + videoId);
+             playButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
 
              //commenting a link 
              // var playA = $("<a>");
@@ -139,6 +139,7 @@ $(document).ready(function(){
              videoImage.attr("data-videoId", videoId);
              videoImage.attr("value", "click");
              videoImage.attr("href", 'https://www.youtube.com/embed/'+videoId);
+
             // videoImage.attr("href", 'https://www.youtube.com/watch?v='+videoId);
              //videoImage.append("<a href=https://www.youtube.com/watch?v="+ videoId + " target='video-play'");
 
@@ -176,10 +177,6 @@ $(document).ready(function(){
              //  })
 
              $("#video-appear-here").prepend(videoDiv);
-
-
-
-
 
          }; //for loop
 
