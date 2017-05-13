@@ -159,7 +159,7 @@ $(document).ready(function(){
 
               // Phase 2 - Move to outer (global) scope and target all play buttons
 
-             $(document).on('click', 'play-button video-image', function (e) {
+             $(document).on('click', 'play-button', function (e) {
                 e.preventDefault();
                 var href = $(this).attr('href');
                  console.log("src: " + href);
