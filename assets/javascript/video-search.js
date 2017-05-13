@@ -78,19 +78,28 @@ $(document).ready(function(){
              var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
              
              //create favorite buttton
-             var favButton = $("<button type='button' id=" + videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm'>");
+             var favButton = $("<button type='button' id=" + videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite'>");
 
              var addSpan = $("<span>");
              addSpan.addClass('glyphicon glyphicon-star')
              addSpan.attr("aria-hidden", 'true');
+             
+             //create play buttton
+             var playButton = $("<button type='button' id=" "name=" +videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm'>");
+
+             var playSpan = $("<span>");
+             playSpan.addClass('glyphicon glyphicon-star')
+             playSpan.attr("aria-hidden", 'true');
+             var playA = $("<a>");
+             playA.addClass('play-button');
+             playA.attr("href", 'https://www.youtube.com/watch?v=' + videoId);
+             playA.attr("target", 'video-play');
+
+
              //create image element
-
              var videoThumb = $("<div class='thumbnail'>");
-             
-
-             
+                         
              var videoImage = $("<img>");
-
 
              //add class to image
              videoImage.addClass('video-image');
@@ -101,7 +110,7 @@ $(document).ready(function(){
              videoImage.attr("data-videoId", videoId);
              videoImage.attr("value", "click");
             // videoImage.attr("onclick", 'https://www.youtube.com/watch?v='+videoId);
-             videoImage.append("<a href=https://www.youtube.com/watch?v="+ videoId + " target='video-play'");
+             //videoImage.append("<a href=https://www.youtube.com/watch?v="+ videoId + " target='video-play'");
 
 
              //prepend  video image to videoDiv
@@ -109,6 +118,8 @@ $(document).ready(function(){
              videoThumb.append(videoImage);
              favButton.append(addSpan);
              videoThumb.prepend(favButton);
+             playButton.appen(addA);
+             videoThumb.prepend(playButton);
              videoThumb.append(p);
              videoDiv.prepend(videoThumb);
 
