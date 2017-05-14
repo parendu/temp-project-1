@@ -35,11 +35,11 @@ $(document).ready(function(){
      $("#video-appear-here").empty();
      //remove src from iframe
      
-     if (true) {
+     // if (true) {
 
-        $("iframe").removeAttr("src");
+     //    $("iframe").removeAttr("src");
 
-       }
+     //   }
      //execute request
      request.execute(function(response) {
          console.log(response);
