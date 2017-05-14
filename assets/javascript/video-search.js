@@ -35,13 +35,13 @@ $(document).ready(function(){
      $("#video-appear-here").empty();
      //remove src from iframe
      
-     if ($("iframe").is('src')) {
-    // attribute exists
 
-    $("iframe").removeAttr("src");
+    if($('iframe').hasAttr('src')) {
+      
+     $("iframe").removeAttr("src");
      }
 
-     //    $("iframe").removeAttr("src");
+    
 
      //   
      //execute request
@@ -189,6 +189,10 @@ $(document).ready(function(){
                 // maybe use an ID instead
                 $('iframe').attr('src', href);
              });
+        //remove atttribute
+          $.fn.hasAttr = function(name) {  
+          return this.attr(name) !== undefined;
+         };
 
 }); //document.ready
 
