@@ -33,7 +33,7 @@ $(document).ready(function(){
      });
 
      //articles display
-     var queryUrl = https://newsapi.org/v1/articles?source=ars-technica&sortBy=latest&apiKey=2d7535a7fe9c4f85a3ecff0e4993a567;
+     var queryUrl = "https://newsapi.org/v1/articles?source=ars-technica&sortBy=latest&apiKey=2d7535a7fe9c4f85a3ecff0e4993a567";
       $.ajax({
         url: queryURL,
         method: "GET"
