@@ -33,7 +33,12 @@ $(document).ready(function(){
      });
 
      $("#video-appear-here").empty();
-     $("#player").destroy();
+     //remove src from iframe
+     var frame = document.getElementById("iframe");
+     frame.src = "about:blank";
+
+
+
      //execute request
      request.execute(function(response) {
          console.log(response);
