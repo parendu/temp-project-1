@@ -37,7 +37,7 @@ $(document).ready(function(){
      
      if ($("iframe").is('src')) {
     // attribute exists
-}
+
     $("iframe").removeAttr("src");
      }
 
