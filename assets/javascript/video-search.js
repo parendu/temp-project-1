@@ -16,7 +16,7 @@ $(document).ready(function(){
      event.preventDefault();
 
      $("#company-name").hide();
-
+     
      console.log("hello");
      var searchTerm = $('#search-term').val();
      console.log(searchTerm);
@@ -33,6 +33,7 @@ $(document).ready(function(){
      });
 
      $("#video-appear-here").empty();
+     $("#player").destroy();
      //execute request
      request.execute(function(response) {
          console.log(response);
