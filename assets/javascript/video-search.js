@@ -34,9 +34,12 @@ $(document).ready(function(){
 
      $("#video-appear-here").empty();
      //remove src from iframe
-     $("iframe").removeAttr("src");
+     
+     if (true) {
 
+        $("iframe").removeAttr("src");
 
+       }
      //execute request
      request.execute(function(response) {
          console.log(response);
