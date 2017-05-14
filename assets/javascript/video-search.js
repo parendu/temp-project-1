@@ -35,7 +35,9 @@ $(document).ready(function(){
      $("#video-appear-here").empty();
      //remove src from iframe
      
-     if ($(this).hasAttr("src")) {
+     if ($("iframe").is('src')) {
+    // attribute exists
+}
     $("iframe").removeAttr("src");
      }
 
