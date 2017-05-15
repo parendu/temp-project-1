@@ -36,6 +36,10 @@
     <div data-role="header" data-position="fixed">
         <h1>Page 1</h1>
     </div>
+
+    <div class="input-group-btn">
+                        <button type="button" id="search-button" class="btn btn-danger">Search</button>
+                    </div>
     <!-- /Header -->
     <!-- Content -->
     <div role="main" class="ui-content">
@@ -43,12 +47,33 @@
         <input name="search" id="search" value="" placeholder="palceholder" type="search">
         <ul data-role="listview" id="results" data-inset="true">
         </ul>
+
+
     </div>
+
+     <div class="row">
+                <div class="col-sm-6" id='articles-display'>
+                    <!-- videos will display here -->
+                   <div id="Article-appear-here">
+                     <ul data-role="listview" id="results" data-inset="true">
+                     </ul>
+                    </div>
+                </div> 
+                
+                <div class="col-sm-6" id='Favorite-video'> 
+                    <!-- videos Player will display here -->
+                    <div id="Favorite-appear-here">
+
+
+                      <!-- <embed width="420" height="315">   -->
+                     
+                    </div>
+                </div>
     <!-- /Content -->
 </div>
 <!-- /page1 -->
 
-			<script src="article-search.js"></script>
+		<script src="./temp-project-1/assets/javascript/article-search.js"></script>
         
     </body>
 
