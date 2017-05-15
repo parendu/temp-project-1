@@ -17,7 +17,8 @@
          //hide company name 
          $("#company-name").hide();
          //remove src from iframe
-         $(".youtube-player").remove("src");
+         $(".youtube-player").removeAttr("src");
+          $(".youtube-player").empty();
 
          console.log("hello");
          var searchTerm = $('#search-term').val();
@@ -276,19 +277,10 @@
                  //    $( this ).find( "p" ).text(videoTitleFull);
                  //  })
 
-                 $("Favorite-appear-here").prepend(videoDiv);
-
-
-        
+                 $("Favorite-appear-here").prepend(videoDiv);      
        
           
     });     
-
-
-
-
-
-
 
 
 
