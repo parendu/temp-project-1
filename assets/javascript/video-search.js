@@ -201,16 +201,17 @@
             var value = $( this ).val();
              console.log(value);
           //get the data videoId, imageUrl and videoTitle from results
-         var videoId = $(".favorite").val();
+         var videoId = $(".id").val();
          console.log(videoId);
 
                 
                  // console.log(videoId);
-                 var imageUrl = $(".favorite").val();
+                 var imageUrl = $("data-href").val();
                  console.log(imageUrl);
-                 var videoTitleFull = $(".favorite").val();
-                 console.log(videoTitleFull);
-                 var p = $("p").val();
+                 
+                
+                 var p = $("<p>").text(videoTitle);
+                  console.log(p);
 
                 $('#Favorite-video').addClass('bordered');
 
