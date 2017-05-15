@@ -17,8 +17,11 @@
          //hide company name 
          $("#company-name").hide();
          //remove src from iframe
-         $(".youtube-player").removeAttr("src");
+         
+           $(".youtube-player").removeAttr("src");
           $(".youtube-player").empty();
+          $(".video-display").empty();
+          $("#video-appear-here").empty();
 
          console.log("hello");
          var searchTerm = $('#search-term').val();
@@ -36,15 +39,6 @@
          });
 
 
-         $("#video-appear-here").empty();
-         //remove src from iframe
-
-
-
-
-
-
-         //   
          //execute request
          request.execute(function(response) {
              console.log(response);
