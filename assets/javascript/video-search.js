@@ -37,10 +37,9 @@ $(document).ready(function(){
      //remove src from iframe
      
 
-    if($('iframe').hasAttr('src')) {
-      
-     $("iframe").removeAttr("src");
-     }
+   
+     $("iframe").remove("src");
+     
 
          //   
      //execute request
