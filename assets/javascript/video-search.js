@@ -194,7 +194,7 @@
  
 
      //capture search-term text box when user click favorite-button
-     $("#favorite").on("click", function(event) {
+     $(".favorite").on("click", function(event) {
          event.preventDefault();
          console.log("hello");
          var thumbnail = $(this).append("#thumbnail");
