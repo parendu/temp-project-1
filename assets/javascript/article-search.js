@@ -24,7 +24,7 @@
          console.log(response.articles);
 
          // create a var for the results and append a header
-         var results = '<li data-role="list-divider">articles:</li>';
+         var results = '<li data-role="list-divider"><strong>Articles:</strong</li>';
 
          for (var i = 0; i < response.articles.length; i++) {
 
