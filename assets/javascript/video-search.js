@@ -93,6 +93,7 @@
                  var addSpan = $("<span>");
                  addSpan.addClass('glyphicon glyphicon-star')
                  addSpan.attr("aria-hidden", 'true');
+                 favButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
 
                  //create play buttton
 
@@ -199,10 +200,10 @@
          e.preventDefault();
           
             var href = $(this).attr('data-href');
-
+            var href = $('data-href').val();
              console.log(href);
           //get the data videoId, imageUrl and videoTitle from results
-              var videoId = $(this).attr('#id');
+              var videoId = $().attr('#id');
               console.log(videoId);
 
                 
