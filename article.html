@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <title>YouCode</title>
     <meta charset="utf-8">
-    <title>Feed Test</title>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <!-- css file reference -->
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- <script src="auth.js"></script> -->
 </head>
 
-<body>
-<div id="body">
-<div id="feedControl">Loading...</div>
+
+
+
+    <body>
+
+                     
+<!-- jQuery -->
+
+
+<!-- jQuery Mobile -->
+
+<!-- page1 -->
+<div data-role="page" id="page1" data-title="page1">
+    <!-- Header -->
+    <div data-role="header" data-position="fixed">
+        <h1>Page 1</h1>
+    </div>
+    <!-- /Header -->
+    <!-- Content -->
+    <div role="main" class="ui-content">
+        <label for="search">Search Input:</label>
+        <input name="search" id="search" value="" placeholder="palceholder" type="search">
+        <ul data-role="listview" id="results" data-inset="true">
+        </ul>
+    </div>
+    <!-- /Content -->
 </div>
+<!-- /page1 -->
 
+			<script src="article-search.js"></script>
+        
+    </body>
 
-<style type="text/css">
-@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
-
-#feedControl {
-margin-top : 10px;
-margin-left: auto;
-margin-right: auto;
-width : 440px;
-font-size: 12px;
-color: #9CADD0 ;
-}
-</style>
-
-<script type="text/javascript">
-function load() {
-var feed ="http://feeds.bbci.co.uk/news/world/rss.xml";
-new GFdynamicFeedControl(feed, "feedControl");
-
-}
-google.load("feeds", "1");
-google.setOnLoadCallback(load);
-</script>
-
-
-
-
-
-
-</body>
 </html>
