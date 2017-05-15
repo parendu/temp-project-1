@@ -88,7 +88,7 @@
                  var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
 
                  //create favorite buttton
-                 var favButton = $("<button type='button' id=" + videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite'>");
+                 var favButton = $("<button type='button' id='favButton' value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite'>");
 
                  var addSpan = $("<span>");
                  addSpan.addClass('glyphicon glyphicon-star')
@@ -194,7 +194,7 @@
  
 
      //capture search-term text box when user click favorite-button
-     $(".favorite").on("click", function(event) {
+     $("#favButton").on("click", function(event) {
          event.preventDefault();
          console.log("hello");
          var thumbnail = $(this).append("#thumbnail");
