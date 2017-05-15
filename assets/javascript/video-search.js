@@ -198,19 +198,20 @@
          console.log("clicked")
          e.preventDefault();
           
-            var value = $( this ).val();
-             console.log(value);
+            var href = $(this).attr('data-href');
+
+             console.log(href);
           //get the data videoId, imageUrl and videoTitle from results
-         var videoId = $(".id").val();
-         console.log(videoId);
+              var videoId = $(this).attr('#id');
+              console.log(videoId);
 
                 
                  // console.log(videoId);
-                 var imageUrl = $("data-href").val();
+                 var imageUrl = $(this).attr('src');
                  console.log(imageUrl);
                  
                 
-                 var p = $("<p>").text(videoTitle);
+                 var p = $("<p>").text("videoTitleFull");
                   console.log(p);
 
                 $('#Favorite-video').addClass('bordered');
