@@ -5,7 +5,7 @@
      var searchTerm = $('#search-term').val();
      console.log(searchTerm);
      // The Base URL
-     var queryUrl = "https://newsapi.org/v1/sources?language=en&category=technology&sortBy=top&apiKey=2d7535a7fe9c4f85a3ecff0e4993a567";
+     var queryUrl = "https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=2d7535a7fe9c4f85a3ecff0e4993a567";
 
      // putting the url togehter and append &callback=?
      var url = queryUrl;
@@ -17,21 +17,21 @@
      }).done(function(response) {
          console.log("second success");
 
-         console.log(response.sources);
+         console.log(response.articles);
 
          //var results = response.articles;
 
-         console.log(response.sources);
+         console.log(response.articles);
 
          // create a var for the results and append a header
          var results = '<li data-role="list-divider"><strong>Articles:</strong</li>';
          //create news articles list creating li attribute
-         for (var i = 0; i < response.sources.length; i++) {
+         for (var i = 0; i < response.articles.length; i++) {
 
              results += '<li>';
-             results += '<a href=' + response.sources[i].url + 'name='+ response.sources[i].description+'</a>';
-            // results += response.sources[i].description+'<br>';
-             //results += response.sources[i].url;
+             results += '<a href=' + response.articles[i].url">" + response.articles[i].title +'</a>';
+            // results += response.articles[i].description+'<br>';
+             //results += response.articles[i].url;
              results += '</li>';
 
 
