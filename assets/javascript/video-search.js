@@ -210,6 +210,7 @@
                  console.log(imageUrl);
                  var videoTitleFull = $(".favorite").val();
                  console.log(videoTitleFull);
+                 var p = $("p").val();
 
                 $('#Favorite-video').addClass('bordered');
 
