@@ -189,6 +189,18 @@
          $('iframe').attr('src', href);
      });
 
+// click on watchlater button and get value
+
+ 
+
+     //capture search-term text box when user click favorite-button
+     $("#favorite").on("click", function(event) {
+         event.preventDefault();
+         console.log("hello");
+         var thumbnail = $(this).append("#thumbnail");
+         console.log(thumbnails);
+          
+    });     
 
 
 
