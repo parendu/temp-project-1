@@ -9,5 +9,5 @@
          var thumbnail = $(this).append("#thumbnail");
          console.log(thumbnails);
           
-         
+    });     
  }); //document.ready
