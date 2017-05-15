@@ -30,6 +30,7 @@
 
              results += '<li>';
              results += response.articles[i].title;
+             results += response.articles[i].url;
              results += '</li>';
          }; //loop
           
