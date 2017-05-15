@@ -29,7 +29,7 @@
          for (var i = 0; i < response.articles.length; i++) {
 
              results += '<li>';
-             results += '<a href=' + response.articles[i].url">" + response.articles[i].title +'</a>';
+             results += '<a href=' + response.articles[i].url + ">" + response.articles[i].title +'</a>';
             // results += response.articles[i].description+'<br>';
              //results += response.articles[i].url;
              results += '</li>';
