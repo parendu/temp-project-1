@@ -20,7 +20,7 @@
          
            $(".youtube-player").removeAttr("src");
           $(".youtube-player").empty();
-         // $(".video-display").removeClass("bordered");
+          $("#video-display").removeClass("bordered");
           $("#video-appear-here").empty();
 
          console.log("hello");
