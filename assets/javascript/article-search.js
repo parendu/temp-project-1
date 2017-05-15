@@ -34,14 +34,6 @@
              //results += response.sources[i].url;
              results += '</li>';
 
-a = document.createElement('a');
-    a.href =  'google.com'; // Insted of calling setAttribute 
-    a.innerHTML = "Link" // <a>INNER_TEXT</a>
-    leftDiv.appendChild(a); // Append the link to the div
-    document.body.appendChild(leftDiv); // And append the div to the document body
-
-
-
 
          }; //loop
           
