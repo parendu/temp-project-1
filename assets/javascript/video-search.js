@@ -199,7 +199,7 @@
          console.log("clicked")
          e.preventDefault();
           
-            var href = $(this).attr('data-href');
+            var videoThumb = $(this).attr('.thumbnail');
             var href = $('data-href').val();
              console.log(href);
           //get the data videoId, imageUrl and videoTitle from results
@@ -240,7 +240,7 @@
                  playButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
 
                  //create image element
-                 var videoThumb = $("<div class='thumbnail'>");
+                 // var videoThumb = $("<div class='thumbnail'>");
 
                  var videoImage = $("<img>");
 
