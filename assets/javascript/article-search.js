@@ -24,7 +24,7 @@
          console.log(response.articles);
 
          // create a var for the results and append a header
-         var results = '<li data-role="list-divider">Results</li>';
+         var results = '<li data-role="list-divider">articles:</li>';
 
          for (var i = 0; i < response.articles.length; i++) {
 
@@ -32,7 +32,9 @@
              results += response.articles[i].title;
              results += '</li>';
          }; //loop
-
+          
+          //add border
+          $('#articles-display').addClass('bordered');
          // // clear the results . append the re sults .refresh the listview
          $('#results').empty().append(results);
 
