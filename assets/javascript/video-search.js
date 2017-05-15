@@ -197,10 +197,19 @@
    $(document).on('click', '.favorite', function(e) {
          console.log("clicked")
          e.preventDefault();
-
+          
+            var value = $( this ).val();
+             console.log(value);
+          //get the data videoId, imageUrl and videoTitle from results
          var videoId = $(".favorite").val();
          console.log(videoId);
 
+                
+                 // console.log(videoId);
+                 var imageUrl = $(".favorite").val();
+                 console.log(imageUrl);
+                 var videoTitleFull = $(".favorite").val();
+                 console.log(videoTitleFull);
 
                 $('#Favorite-video').addClass('bordered');
 
