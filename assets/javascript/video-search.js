@@ -199,16 +199,14 @@
          console.log("clicked")
          e.preventDefault();
           
-            var videoThumb = $(this).attr('.thumbnail');
-            var href = $('data-href').val();
-             console.log(href);
+                  
           //get the data videoId, imageUrl and videoTitle from results
-              var videoId = $().attr('#id');
-              console.log(videoId);
-
-                
-                 // console.log(videoId);
+              var videoId = $(this).attr('id');
+              var videoId = $("id").val()
+              console.log(videoId);               
+         // console.log(videoId);
                  var imageUrl = $(this).attr('src');
+                 var imageUrl = $("src").val();
                  console.log(imageUrl);
                  
                 
