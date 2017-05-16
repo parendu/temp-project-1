@@ -39,8 +39,8 @@
                 results += "<li>";
                 results +=  "<a>";
                 results += '</li>';
-                link.attr("href", response.articles[i].url);
-                link.attr("title", response.articles[i].title);
+                $("<a>").attr("href", response.articles[i].url);
+                $("<a>").attr("title", response.articles[i].title);
 
                console.log(results);
 
