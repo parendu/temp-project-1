@@ -10,7 +10,7 @@
  };
 
  $(document).ready(function() {
-
+      window
      //capture search-term text box when user click search-button
      $("#search-button").on("click", function(event) {
          event.preventDefault();
@@ -22,7 +22,7 @@
           $(".youtube-player").empty();
           $("#video-display").removeClass("bordered");
           $("#video-appear-here").empty();
-          //window.location.reload();
+          window.location.reload(true);
 
          console.log("hello");
          var searchTerm = $('#search-term').val();
