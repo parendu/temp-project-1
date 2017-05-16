@@ -28,16 +28,21 @@
          // var results = '<li data-role="list-divider"><strong>Articles:</strong</li>';
          
          //<p><strong>Articles:</strong></p>
+         var p = $("<p>").text("Articles:");
+                  console.log(p);
+          
          //create news articles list creating li attribute
          for (var i = 0; i < response.articles.length; i++) {
 
 
-               var list = $("<li>");
+              // var list = $("<li>");
                 var link = $("<a>");
                 link.attr("href", response.articles[i].url);
                 link.attr("title", response.articles[i].title);
                 
-                link.prepend(list);
+                var list = $("<li>").append(link);
+                ("#Article-appear-here").append(list)
+
 
                 // results += "<li>";
                 // results +=  "'<a href='" + response.articles[i].url>;
