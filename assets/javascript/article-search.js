@@ -30,7 +30,7 @@
          //<p><strong>Articles:</strong></p>
          var p = $("<p>").text("Articles:");
                   console.log(p);
-          
+
          //create news articles list creating li attribute
          for (var i = 0; i < response.articles.length; i++) {
 
@@ -41,7 +41,7 @@
                 link.attr("title", response.articles[i].title);
                 
                 var list = $("<li>").append(link);
-                ("#Article-appear-here").append(list)
+                $("#Article-appear-here").append(list)
 
 
                 // results += "<li>";
