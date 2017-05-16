@@ -1,5 +1,5 @@
  //capture search-term text box when user click search-button
-
+$(document).ready(function(){
  $("#search-button").on("click", function(event) {
      event.preventDefault();
 
@@ -34,31 +34,12 @@
          //create news articles list creating li attribute
          for (var i = 0; i < response.articles.length; i++) {
 
-
-              // var list = $("<li>");
-                // var link = $("<a>");
-                // link.attr("href", response.articles[i].url);
-                // link.attr("title", response.articles[i].title);
-                
-                // var list = $("<li>").append(link);
-                // $("#Article-appear-here").html(list);
-
-
-                 // results += list;
-                // results +=  "'<a href='" + response.articles[i].url>;
-                // results += '</li>';
-                // $("<a>").attr("href", response.articles[i].url);
-                // $("<a>").attr("title", response.articles[i].title);
-
-
-
-               console.log(results);
-
-             results += '<li>';
-             results += '<a href=' + response.articles[i].url + "title="+  response.articles[i].title;
-            // results += response.articles[i].description+'<br>';
-            //  //results += response.articles[i].url;
-             results += '</li>';
+              //create list
+                results += '<li>';
+               results += "<a>" + response.articles[i].title;
+               //set href
+               $("<a>").attr("href", response.articles[i].url);
+              results += '</li>';
 
 
          }; //loop
@@ -66,7 +47,7 @@
           //add border
           $('#articles-display').addClass('bordered');
          // // clear the results . append the re sults .refresh the listview
-         $('#results').empty().append(results);
+          $('#results').empty().append(results);
 
          // }).fail(function() {
          //   console.log("error");
@@ -77,4 +58,5 @@
      }); //response
    
 
- });
+ }); //click
+});  //document ready
