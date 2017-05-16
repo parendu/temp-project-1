@@ -34,8 +34,12 @@
             var link = $("<a>");
                link.attr("href", response.articles[i].url);
                link.attr("title", response.articles[i].title);
-               
-              results += $("<a>").wrap("<li>");
+                
+                
+                results += $("</li>");
+                results += link;
+                results += '</li>'
+              
                console.log(results);
 
             //  results += '<li>';
