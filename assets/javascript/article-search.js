@@ -32,12 +32,12 @@
 
             
             var link = $("<a>");
-               link.attr("href", "response.articles[i].url");
-               link.attr("title", "response.articles[i].title")
+               link.attr("href", response.articles[i].url);
+               link.attr("title", response.articles[i].title);
                var list = $("<li>");
                results = link.append(list);
                console.log(results);
-               
+
             //  results += '<li>';
             //  results += '<a href=' + response.articles[i].url + ">" + response.articles[i].title +'</a>';
             // // results += response.articles[i].description+'<br>';
