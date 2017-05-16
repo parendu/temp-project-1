@@ -39,36 +39,41 @@
 
     <div class="input-group-btn">
                         <button type="button" id="search-button" class="btn btn-danger">Search</button>
-                    </div>
+    </div>
     <!-- /Header -->
     <!-- Content -->
     <div role="main" class="ui-content">
         <label for="search">Search Input:</label>
         <input name="search" id="search" value="" placeholder="palceholder" type="search">
-        <ul data-role="listview" id="results" data-inset="true">
-        </ul>
+        <!-- <ul data-role="listview" id="results" data-inset="true"> -->
+        <!-- </ul> -->
 
 
     </div>
 
      <div class="row">
-                <div class="col-sm-6" id='articles-display'>
+        <div class="col-sm-6" id='articles-display'>
                     <!-- videos will display here -->
-                   <div id="Article-appear-here">
-                     <ul data-role="listview" id="results" data-inset="true">
+                <div id="article-header">
+
+                </div>
+
+                <div id="Article-appear-here">
+                         
+                    <ul data-role="listview" id="results" data-inset="true">
                      </ul>
-                    </div>
-                </div> 
+                </div>
+        </div> 
                 
-                <div class="col-sm-6" id='Favorite-video'> 
+        <div class="col-sm-6" id='Favorite-video'> 
                     <!-- videos Player will display here -->
                     <div id="Favorite-appear-here">
 
 
                       <!-- <embed width="420" height="315">   -->
                      
-                    </div>
-                </div>
+        </div>
+    </div>
     <!-- /Content -->
 </div>
 
@@ -101,58 +106,36 @@ $(document).ready(function(){
          console.log(response.articles);
 
          // create a var for the results and append a header
-          var results = '<li data-role="list-divider"><strong>Articles:</strong</li>';
+         var results = '<strong>Articles:</strong>';
          
-         //<p><strong>Articles:</strong></p>
-         var p = $("<p>").text("Articles:");
-                  console.log(p);
+         var p = "<h3>Articles:</h3>";
+         $("#article-header").html(p);
+                  
 
          //create news articles list creating li attribute
          for (var i = 0; i < response.articles.length; i++) {
 
 
-                //  var list = $("<li>" + response.articles[i] + "</li>");
-                //  console.log(list);
-                //  var link = $("<a>");
-                //  link.attr("href", response.articles[i].url);
-                //  link.attr("title", response.articles[i].title);
+                  var list = $("<li>");
+                  list.text(response.articles[i].title);
+                    console.log(list);
+                  var link = $("<a>");
+                  link.attr("href", response.articles[i].url);
+                  //link.attr("title", response.articles[i].title);
+                  link.attr("target", "_blank");
+
                  
-                // list.append(link);
-                // console.log(list);
-                // var list = $("<li>").append(link);
-                // $("#Article-appear-here").html(list);
-              
+               
 
-                 // results += list;
-                // results +=  "'<a href='" + response.articles[i].url>;
-                // results += '</li>';
-                // $("<a>").attr("href", response.articles[i].url);
-                // $("<a>").attr("title", response.articles[i].title);
+                 link.append(list);
 
-                // var list = $("<li>");
-                //  var link = $("<a title=" + response.articles[i].title);
-                //  link.attr("href", response.articles[i].url);
-                // link.attr("title", response.articles[i].title);
-                
-                // list.append(link);
-
-
-             //   console.log(results);
-
-               results += '<li>';
-               results += "<a>" + response.articles[i].title;
-               $("<a>").attr("href", response.articles[i].url);
-            // results += response.articles[i].description+'<br>';
-            //  //results += response.articles[i].url;
-              results += '</li>';
-
+                   $('#results').append(link);
 
          }; //loop
-          
+
           //add border
           $('#articles-display').addClass('bordered');
-         // // clear the results . append the re sults .refresh the listview
-          $('#results').empty().append(results);
+        //    $('#articles-display').append(results);
 
          // }).fail(function() {
          //   console.log("error");
@@ -165,6 +148,8 @@ $(document).ready(function(){
 
  }); //click
 });  //document ready
+
+
 
 </script>		<!-- <script src="./temp-project-1/assets/javascript/article-search.js"></script> -->
         
