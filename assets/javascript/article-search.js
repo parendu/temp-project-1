@@ -36,15 +36,15 @@
 
 
               // var list = $("<li>");
-                var link = $("<a>");
-                link.attr("href", response.articles[i].url);
-                link.attr("title", response.articles[i].title);
+                // var link = $("<a>");
+                // link.attr("href", response.articles[i].url);
+                // link.attr("title", response.articles[i].title);
                 
-                var list = $("<li>").append(link);
-                $("#Article-appear-here").html(list);
+                // var list = $("<li>").append(link);
+                // $("#Article-appear-here").html(list);
 
 
-                 results += list;
+                 // results += list;
                 // results +=  "'<a href='" + response.articles[i].url>;
                 // results += '</li>';
                 // $("<a>").attr("href", response.articles[i].url);
@@ -54,11 +54,11 @@
 
                console.log(results);
 
-            //  results += '<li>';
-            //  results += '<a href=' + response.articles[i].url + ">" + response.articles[i].title +'</a>';
-            // // results += response.articles[i].description+'<br>';
+             results += '<li>';
+             results += '<a href=' + response.articles[i].url + "title="+ response.articles[i].title +'</a>';
+            // results += response.articles[i].description+'<br>';
             //  //results += response.articles[i].url;
-            //  results += '</li>';
+             results += '</li>';
 
 
          }; //loop
