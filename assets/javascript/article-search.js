@@ -36,9 +36,9 @@
                link.attr("title", response.articles[i].title);
                 
                 
-                results += $("</li>");
+                results += "</li>";
                 results += link;
-                results += '</li>'
+                results += '</li>';
               
                console.log(results);
 
