@@ -30,16 +30,18 @@
          for (var i = 0; i < response.articles.length; i++) {
 
 
-            var list = $("<li>");
-            var link = $("<a>");
-               link.attr("href", response.articles[i].url);
-               link.attr("title", response.articles[i].title);
+            // var list = $("<li>");
+            // var link = $("<a>");
+            //    link.attr("href", response.articles[i].url);
+            //    link.attr("title", response.articles[i].title);
                 
                 
                 results += "<li>";
-                results += link;
+                results +=  "<a>";
                 results += '</li>';
-              
+                link.attr("href", response.articles[i].url);
+                link.attr("title", response.articles[i].title);
+
                console.log(results);
 
             //  results += '<li>';
