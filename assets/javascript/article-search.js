@@ -30,12 +30,12 @@
          for (var i = 0; i < response.articles.length; i++) {
 
 
-            
+            var list = $("<li>");
             var link = $("<a>");
                link.attr("href", response.articles[i].url);
                link.attr("title", response.articles[i].title);
-               var list = $("<li>");
-               results = list.prepend(link);
+               
+              results += ("link").wrap("<li>");
                console.log(results);
 
             //  results += '<li>';
