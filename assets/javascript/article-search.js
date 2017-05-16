@@ -27,7 +27,7 @@
          // create a var for the results and append a header
          // var results = '<li data-role="list-divider"><strong>Articles:</strong</li>';
          
-         <p><strong>Articles:</strong></p>
+         //<p><strong>Articles:</strong></p>
          //create news articles list creating li attribute
          for (var i = 0; i < response.articles.length; i++) {
 
@@ -38,7 +38,7 @@
                 link.attr("title", response.articles[i].title);
                 
                 link.prepand(list);
-                
+
                 // results += "<li>";
                 // results +=  "'<a href='" + response.articles[i].url>;
                 // results += '</li>';
