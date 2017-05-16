@@ -25,7 +25,7 @@
          console.log(response.articles);
 
          // create a var for the results and append a header
-         // var results = '<li data-role="list-divider"><strong>Articles:</strong</li>';
+         var results = '<li data-role="list-divider"><strong>Articles:</strong</li>';
          
          //<p><strong>Articles:</strong></p>
          var p = $("<p>").text("Articles:");
@@ -44,7 +44,7 @@
                 $("#Article-appear-here").html(list);
 
 
-                // results += "<li>";
+                 results += list;
                 // results +=  "'<a href='" + response.articles[i].url>;
                 // results += '</li>';
                 // $("<a>").attr("href", response.articles[i].url);
