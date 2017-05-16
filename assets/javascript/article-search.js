@@ -35,7 +35,7 @@
                link.attr("href", response.articles[i].url);
                link.attr("title", response.articles[i].title);
                var list = $("<li>");
-               results = link.append(list);
+               results = link.prepend(list);
                console.log(results);
 
             //  results += '<li>';
