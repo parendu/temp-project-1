@@ -25,22 +25,27 @@
          console.log(response.articles);
 
          // create a var for the results and append a header
-         var results = '<li data-role="list-divider"><strong>Articles:</strong</li>';
+         // var results = '<li data-role="list-divider"><strong>Articles:</strong</li>';
+         
+         <p><strong>Articles:</strong></p>
          //create news articles list creating li attribute
          for (var i = 0; i < response.articles.length; i++) {
 
 
-            // var list = $("<li>");
-            // var link = $("<a>");
-            //    link.attr("href", response.articles[i].url);
-            //    link.attr("title", response.articles[i].title);
+               var list = $("<li>");
+                var link = $("<a>");
+                link.attr("href", response.articles[i].url);
+                link.attr("title", response.articles[i].title);
                 
+                link.prepand(list);
                 
-                results += "<li>";
-                results +=  "<a>";
-                results += '</li>';
-                $("<a>").attr("href", response.articles[i].url);
-                $("<a>").attr("title", response.articles[i].title);
+                // results += "<li>";
+                // results +=  "'<a href='" + response.articles[i].url>;
+                // results += '</li>';
+                // $("<a>").attr("href", response.articles[i].url);
+                // $("<a>").attr("title", response.articles[i].title);
+
+
 
                console.log(results);
 
