@@ -22,7 +22,7 @@
           $(".youtube-player").empty();
           $("#video-display").removeClass("bordered");
           $("#video-appear-here").empty();
-         // window.location.reload(true);
+         player.destroy():Void
 
          console.log("hello");
          var searchTerm = $('#search-term').val();
