@@ -41,7 +41,7 @@
                 link.attr("title", response.articles[i].title);
                 
                 var list = $("<li>").append(link);
-                $("#Article-appear-here").append(list);
+                $("#Article-appear-here").html(list);
 
 
                 // results += "<li>";
