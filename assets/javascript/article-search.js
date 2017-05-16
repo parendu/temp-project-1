@@ -37,7 +37,7 @@
                 link.attr("href", response.articles[i].url);
                 link.attr("title", response.articles[i].title);
                 
-                link.prepand(list);
+                link.prepend(list);
 
                 // results += "<li>";
                 // results +=  "'<a href='" + response.articles[i].url>;
