@@ -35,7 +35,7 @@
                link.attr("href", response.articles[i].url);
                link.attr("title", response.articles[i].title);
                
-              results += ("link").wrap("<li>");
+              results += ("<a>").wrap("<li>");
                console.log(results);
 
             //  results += '<li>';
