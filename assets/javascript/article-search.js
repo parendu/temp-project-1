@@ -55,7 +55,7 @@
                console.log(results);
 
              results += '<li>';
-             results += '<a href=' + response.articles[i].url + "title="+ response.articles[i].title +'</a>';
+             results += '<a href=' + response.articles[i].url + "title="+  response.articles[i].title;
             // results += response.articles[i].description+'<br>';
             //  //results += response.articles[i].url;
              results += '</li>';
