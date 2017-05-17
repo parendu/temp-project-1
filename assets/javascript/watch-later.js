@@ -28,7 +28,7 @@
                  var favDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
 
                  //create favorite buttton
-                 var favButton = $("<button type='button' id=" + videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite'>");
+                 var favButton = $("<button type='button' data-videoId=" + videoId + "id = 'favorite' value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite'>");
 
                  var addSpan = $("<span>");
                  addSpan.addClass('glyphicon glyphicon-star')
@@ -60,12 +60,9 @@
                  videoImage.attr("src", imageUrl);
                  videoImage.attr("data-videoId", videoId);
                  videoImage.attr("value", "click");
-                 videoImage.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
+                 videoImage.attr("data-href", href);
 
-                 // videoImage.attr("href", 'https://www.youtube.com/watch?v='+videoId);
-                 //videoImage.append("<a href=https://www.youtube.com/watch?v="+ videoId + " target='video-play'");
-
-
+                 
                  //prepend  video image to videoDiv
 
                  videoThumb.append(videoImage);
@@ -94,7 +91,7 @@
   $(document).on('click', '.play-button', function(e) {
          console.log("clicked")
          e.preventDefault();
-         console.log(data-href);
+         // console.log(data-href);
          var href = $(this).attr('data-href');
          console.log("src: " + href);
          // maybe use an ID instead
