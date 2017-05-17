@@ -10,6 +10,11 @@
              var videoId = $(this).attr("data-videoId");
              // var videoId = $("data-videoId").val()
               console.log(videoId);
+              var href = $(this).attr("data-href");
+             // var videoId = $("data-videoId").val()
+              console.log(href);
+
+
               var imageUrl = $(this).siblings('img').attr("src");
              // var videoId = $("data-videoId").val()
               console.log(imageUrl);
