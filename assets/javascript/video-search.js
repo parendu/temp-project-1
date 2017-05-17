@@ -211,6 +211,6 @@
       });
     } // End if
   });
-});
+
 
  }); //document.ready
