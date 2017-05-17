@@ -110,8 +110,8 @@
   $(document).on('click', '.favorite-button', function(e) {
          console.log("clicked")
          e.preventDefault();
-          var input = $(this).attr(".thumbnail");
-          input.empty();
+        $(this).attr(".thumbnail").empty()
+          
 
         });
           
