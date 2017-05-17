@@ -52,5 +52,14 @@
 .favorite {
     float: left;
     margin-bottom: 5px;
+  
   }
+
+  body, html, .main {
+    height: 100%;
+}
+
+#favorite-appear-here {
+    min-height: 100%;
+}
  
