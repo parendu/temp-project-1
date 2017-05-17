@@ -33,7 +33,7 @@
                  var addSpan = $("<span>");
                  addSpan.addClass('glyphicon glyphicon-star')
                  addSpan.attr("aria-hidden", 'true');
-                 favButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
+                 favButton.attr("data-href", href);
 
                  //create play buttton
 
@@ -45,7 +45,7 @@
 
                  //adding href to span
 
-                 playButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
+                 playButton.attr("data-href", href);
 
                  //create image element
                  var videoThumb = $("<div class='thumbnail'>");
@@ -91,6 +91,15 @@
               
 });
 
+  $(document).on('click', '.play-button', function(e) {
+         console.log("clicked")
+         e.preventDefault();
+         console.log(data-href);
+         var href = $(this).attr('data-href');
+         console.log("src: " + href);
+         // maybe use an ID instead
+         $('iframe').attr('src', href);
+     });
 
      $(document).on('click', '.video-image', function(e) {
          console.log("clicked")
