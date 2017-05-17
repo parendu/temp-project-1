@@ -1,62 +1,4 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <title>YouCode</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <!-- Bootstrap CDN-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-    <!-- css file reference -->
-    <script type="text/javascript"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <!-- <script src="auth.js"></script> -->
-</head>
-
-<body>
-    </head>
-
-    <body>
-<div class="container">
-<div class="row">
-<div class="col-sm-3 item" margin-bottom="10px">
-    <div class="thumbnail">
-        <button type="button" name="4oSCuEtxRK8value"margin-bottom="10px" class="btn btn-default btn-sm play-button" data-href="https://www.youtube.com/embed/4oSCuEtxRK8"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
-        <button type="button" data-videoId="4oSCuEtxRK8value" id="favorite" margin-bottom="10px" class="btn btn-default btn-sm favorite-button" data-href="https://www.youtube.com/embed/4oSCuEtxRK8"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></button>
-        <img class="video-image" src="https://i.ytimg.com/vi/4oSCuEtxRK8/default.jpg" data-videoId="4oSCuEtxRK8" value="click" data-href="https://www.youtube.com/embed/4oSCuEtxRK8">
-        <p>PHP Tutorials: Register &amp; Login: User lo...</p>
-    </div>
-</div>
-</div>
-<div class="row">
-                <div class="col-sm-6" id='articles-display'>
-                    <!-- videos will display here -->
-                   <div id="Article-appear-here">
-                     <ul data-role="listview" id="results" data-inset="true">
-                     </ul>
-                    </div>
-                </div> 
-                
-                <div class="col-sm-6" id='favorite-video'> 
-                    <!-- videos Player will display here -->
-                    <div id="favorite-appear-here">
-
-
-                      <!-- <embed width="420" height="315">   -->
-                     
-                    </div>
-                </div>
-        </div>
-
-</div>
-
-<script>
 
      //capture search-term text box when user click favorite-button
          $(document).on('click', '.favorite-button', function(e) {
@@ -153,8 +95,3 @@
          // maybe use an ID instead
          $('iframe').attr('src', href);
      });
-     
-</script>
-     </body>
-
-</html>
