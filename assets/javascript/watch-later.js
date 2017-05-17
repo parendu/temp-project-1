@@ -28,12 +28,12 @@
                  var favDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
 
                  //create favorite buttton
-                 var favButton = $("<button type='button' data-videoId=" + videoId + "id = 'favorite' value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite'>");
+                 var deleteButton = $("<button type='button' data-videoId=" + videoId + "id = 'favorite' value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite'>");
 
                  var addSpan = $("<span>");
-                 addSpan.addClass('glyphicon glyphicon-star')
+                 addSpan.addClass('glyphicon glyphicon-remove')
                  addSpan.attr("aria-hidden", 'true');
-                 favButton.attr("data-href", href);
+                // favButton.attr("data-href", href);
 
                  //create play buttton
 
@@ -72,7 +72,7 @@
                  playButton.append(playSpan);
 
 
-                 videoThumb.prepend(favButton);
+                 videoThumb.prepend(deleteButton);
                  videoThumb.prepend(playButton);
                  videoThumb.append(p);
                  favDiv.prepend(videoThumb);
@@ -87,7 +87,7 @@
 
               
 });
-
+  //play video click play button
   $(document).on('click', '.play-button', function(e) {
          console.log("clicked")
          e.preventDefault();
@@ -97,7 +97,7 @@
          // maybe use an ID instead
          $('iframe').attr('src', href);
      });
-
+    //play video click image
      $(document).on('click', '.video-image', function(e) {
          console.log("clicked")
          e.preventDefault();
@@ -106,3 +106,12 @@
          // maybe use an ID instead
          $('iframe').attr('src', href);
      });
+ //remove watch later video click remove button
+  $(document).on('click', '.favorite-button', function(e) {
+         console.log("clicked")
+         e.preventDefault();
+          var input = $(this).attr(".thumbnail");
+          input.empty();
+
+        });
+          
