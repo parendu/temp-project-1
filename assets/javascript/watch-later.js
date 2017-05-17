@@ -66,7 +66,7 @@
                  //prepend  video image to videoDiv
 
                  videoThumb.append(videoImage);
-                 favButton.append(addSpan);
+                 deleteButton.append(addSpan);
 
                  //playButton.append(playA);
                  playButton.append(playSpan);
