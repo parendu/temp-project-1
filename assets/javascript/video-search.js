@@ -186,98 +186,31 @@
          $('iframe').attr('src', href);
      });
 
-/////////////////////////////////////////////////////////////
-// click on watchlater button and get value
+/// SCROLLING
+/// 
 
-////////////////////////////////////////////////////////// 
+ // Add smooth scrolling to all links
+  $("favorite-video").on('click', function(event) {
 
-   //   //capture search-term text box when user click favorite-button
-   // $(document).on('click', '.favorite', function(e) {
-   //       console.log("clicked")
-   //       e.preventDefault();
-          
-                  
-   //        //get the data videoId, imageUrl and videoTitle from results
-   //            var videoId = $(this).attr('id');
-   //            var videoId = $("id").val()
-   //            console.log(videoId);               
-   //       // console.log(videoId);
-   //               var imageUrl = $(this).attr('src');
-   //               var imageUrl = $("src").val();
-   //               console.log(imageUrl);
-                 
-                
-   //               var p = $("<p>").text("videoTitleFull");
-   //                console.log(p);
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-   //              $('#Favorite-video').addClass('bordered');
+      // Store hash
+      var hash = this.hash;
 
-   //               //create class image for each video        
-   //               var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
-
-   //               //create favorite buttton
-   //               var favButton = $("<button type='button' id='favButton' value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite'>");
-
-   //               var addSpan = $("<span>");
-   //               addSpan.addClass('glyphicon glyphicon-star')
-   //               addSpan.attr("aria-hidden", 'true');
-
-   //               //create play buttton
-
-
-   //               var playButton = $("<button type='button'  name=" + videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm play-button'>");
-   //               var playSpan = $("<span>");
-   //               playSpan.addClass('glyphicon glyphicon-play')
-   //               playSpan.attr("aria-hidden", 'true');
-
-   //               //adding href to span
-
-   //               playButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
-
-   //               //create image element
-   //               // var videoThumb = $("<div class='thumbnail'>");
-
-   //               var videoImage = $("<img>");
-
-   //               //add class to image
-   //               videoImage.addClass('video-image');
-
-   //               //set src image
-   //               //set data-videoid
-   //               videoImage.attr("src", imageUrl);
-   //               videoImage.attr("data-videoId", videoId);
-   //               videoImage.attr("value", "click");
-   //               videoImage.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
-
-   //               // videoImage.attr("href", 'https://www.youtube.com/watch?v='+videoId);
-   //               //videoImage.append("<a href=https://www.youtube.com/watch?v="+ videoId + " target='video-play'");
-
-
-   //               //prepend  video image to videoDiv
-
-   //               videoThumb.append(videoImage);
-   //               favButton.append(addSpan);
-
-   //               //playButton.append(playA);
-   //               playButton.append(playSpan);
-
-
-   //               videoThumb.prepend(favButton);
-   //               videoThumb.prepend(playButton);
-   //               videoThumb.append(p);
-   //               videoDiv.prepend(videoThumb);
-
-   //               //  mouseover display full title
-   //               // $( ".thumbnail" )
-   //               //      .mouseover(function() {
-   //               //    $( this ).find( "p" ).text(videoTitleFull);
-   //               //  })
-
-   //               $("Favorite-appear-here").prepend(videoDiv);      
-       
-          
-   //  });     
-
-
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 
  }); //document.ready
