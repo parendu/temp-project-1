@@ -28,7 +28,7 @@
                  var favDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
 
                  //create favorite buttton
-                 var deleteButton = $("<button type='button' data-videoId=" + videoId + "id = 'favorite' value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite'>");
+                 var deleteButton = $("<button type='button' data-videoId=" + videoId + "id = 'favorite' value='click' margin-bottom='10px' class='btn btn-default btn-sm delete-button'>");
 
                  var addSpan = $("<span>");
                  addSpan.addClass('glyphicon glyphicon-remove')
