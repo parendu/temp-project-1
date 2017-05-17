@@ -27,7 +27,9 @@
 <div class="row">
 <div class="col-sm-3 item" margin-bottom="10px">
     <div class="thumbnail">
+
         <button type="button" name="4oSCuEtxRK8value"margin-bottom="10px" class="btn btn-default btn-sm play-button" data-href="https://www.youtube.com/embed/4oSCuEtxRK8"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+
         <button type="button" data-videoId="4oSCuEtxRK8value" id="favorite" margin-bottom="10px" class="btn btn-default btn-sm favorite-button" data-href="https://www.youtube.com/embed/4oSCuEtxRK8"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></button>
         <img class="video-image" src="https://i.ytimg.com/vi/4oSCuEtxRK8/default.jpg" data-videoId="4oSCuEtxRK8" value="click" data-href="https://www.youtube.com/embed/4oSCuEtxRK8">
         <p>PHP Tutorials: Register &amp; Login: User lo...</p>
@@ -81,12 +83,12 @@
                  var favDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
 
                  //create favorite buttton
-                 var favButton = $("<button type='button' id=" + videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite'>");
+                 var deleteButton = $("<button type='button' id=" + videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm delete-button'>");
 
                  var addSpan = $("<span>");
-                 addSpan.addClass('glyphicon glyphicon-star')
+                 addSpan.addClass('glyphicon glyphicon-remove')
                  addSpan.attr("aria-hidden", 'true');
-                 favButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
+                 deleteButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
 
                  //create play buttton
 
@@ -122,13 +124,13 @@
                  //prepend  video image to videoDiv
 
                  videoThumb.append(videoImage);
-                 favButton.append(addSpan);
+                 deleteButton.append(addSpan);
 
                  //playButton.append(playA);
                  playButton.append(playSpan);
 
 
-                 videoThumb.prepend(favButton);
+                 videoThumb.prepend(deleteButton);
                  videoThumb.prepend(playButton);
                  videoThumb.append(p);
                  favDiv.prepend(videoThumb);
@@ -153,7 +155,15 @@
          // maybe use an ID instead
          $('iframe').attr('src', href);
      });
-     
+     //remove watch later video click remove button
+  $(document).on('click', '.delete-button', function(e) {
+         console.log("clicked")
+         e.preventDefault();
+         $(this).closest('.col-sm-3').remove();
+        //$(this).attr(".thumbnail").empty();
+      
+
+        });
 </script>
      </body>
 

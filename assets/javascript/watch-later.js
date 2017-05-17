@@ -107,10 +107,10 @@
          $('iframe').attr('src', href);
      });
  //remove watch later video click remove button
-  $(document).on('click', '.favorite-button', function(e) {
+    $(document).on('click', '.delete-button', function(e) {
          console.log("clicked")
          e.preventDefault();
-        $(this).attr(".thumbnail").empty();
+         $(this).closest('.col-sm-3').remove();
           
 
         });
