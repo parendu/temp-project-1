@@ -30,8 +30,8 @@ $(document).ready(function(){
          //$("#article-header").html(p);
 
          //create news articles list creating li attribute
-         for (var i = 0; i < response.articles.length; i++) {
-
+         // for (var i = 0; i < response.articles.length; i++) {
+          for (var i = 0; i < 6; i++) {
               var eachPaper = $("<div class='eachPaper'>");
               var articleTitle = $("<h3 id='paper_1_title'>");
               articleTitle.text(response.articles[i].title);
@@ -41,8 +41,9 @@ $(document).ready(function(){
               eachPaper.append(articleDiscription);
 
               var articlesButtons =$("<button type='button' class='btn btn-primary paperButtons' id='paperButton_1' style='float: right'>");
-              articlesButtons.attr("href", response.articles[i].utl);
+              articlesButtons.attr("href", response.articles[i].url);
               articlesButtons.text("Read");
+              eachPaper.append(articlesButtons);
               
               $(".articles").append(eachPaper);
 
