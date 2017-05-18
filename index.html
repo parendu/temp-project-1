@@ -20,46 +20,120 @@
 </head>
 
 <body>
-    </head>
-
-    <body>
-        <div class="jumbotron text-center">
-            <div id="company-name" class="collapse in">
-                <h1>YouCode</h1>
-                <p>Introduction to our Web Application</p>
+      <!-- header -->
+      <div class="wrapper">
+         <!-- ============== intro ================= -->
+         <div class="jumbotron">
+            <div class="container">
+               <p class="text-center" class="col-lg-8 col-lg-offset-2"><img src="assets/images/logo.png"><br><br>Using <span style="color: purple;">You</span ><span style="color: salmon;">Code</span> to filter the right coding tutorials on YouTube. <br> Do you remember the story <span style="font-style: italic; font-size: 1.1em;">Tortoise and the Hare</span> ? <br> Dare you to be the learning tortoise to win !</p>
             </div>
-            <form class="form-inline">
-                <div class="input-group">
-                    <select class="form-control" id="search-term" placeholder="Select Subject" style="width: 300px" required>
-                        <!-- select class="form-control" id="sel1"> -->
-                        <option>PHP</option>
-                        <option>JavaScript</option>
-                        <option>GitHub</option>
-                        <option>node.js</option>
-                        <option>html</option>
-                        <option>css</option>
-                        <option>Python</option>
-                    </select>
-                    <div class="input-group-btn">
-                        <button type="button" id="search-button" class="btn btn-danger">Search</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <!-- First Container (Grid) -->
-        <div class="container-fluid">
+            <!-- / container -->
+         </div>
+         <!-- / jumbotron -->
+         <!-- ============== / intro ================= -->
+         <!-- ============== search bar ================= -->
+         <section id="searchBar">
+            <div class="container">
+               <div class="row">
+            
+                  <div class="col-sm-6 col-sm-offset-3">
+                  <div ><img  id="SMlogo" src="assets/images/YouCodelogo.png"></div>
+                     <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" id="customerKeywords" aria-label="keyWords" placeholder="key words, such as header ...">
+                        <div class="input-group-btn">
+                           <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HTML <span class="caret"></span></button>
+                           <ul class="dropdown-menu" id="search-term">
+                              <li>Javascript</li>
+                              <li>CSS</li>
+                              <li>PHP</li>
+                              <li>AJAX</li>
+                              <li>JSON</li>
+                              <li>Java</li>
+                              <li>C</li>
+                              <li>Python</li>
+                              <li>Firebase</li>
+                              <li>Ruby</li>
+                              <li>Bootstrap</li>
+                              <li>Ruby</li>
+                           </ul>
+                           <button type="button" class="btn btn-primary" id="search-button"><span class="glyphicon glyphicon-search"></span></button>      
+                        </div>
+                        <!-- /btn-group -->
+                     </div>
+                     <!-- /input-group -->
+                  </div>
+                  <!-- /.col-lg-6 -->
+               </div>
+               <!-- / row -->
+            </div>
+            <!-- / container-->
+         </section>
+         <!-- /.section-->
+         <!-- ============== / search bar================= -->
+         <!-- ============== divider ================= -->
+
+<div id="mainBox">
+<!-- ============== mainBox ================= -->
+
+
+         <div class="divider">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     
+                  </div>
+                  <!-- / col-->
+               </div>
+               <!-- / row-->
+            </div>
+            <!-- / cotainer-->
+         </div>
+         <!-- ============== / divider ================= -->
+         <!--  First row include left recommended videos and right video player  -->
+         <div class="container">
             <div class="row">
-                <div class="col-sm-6" id='video-display'>
-                    <!-- videos will display here -->
-                    <div id="video-appear-here"></div>
-                    </div> 
+               <div class="col-md-6">
+                  <!-- left col -->
+                  <ul class="nav nav-tabs">
+                     <li class="active">
+                        <a href="#views" data-toggle="tab">
+                           <h5 class="primary">  Most Views  </h5>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#likes" data-toggle="tab">
+                           <h5>  Most Likes  </h5>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#library" data-toggle="tab">
+                           <h5>  You Saved  </h5>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#history" data-toggle="tab">
+                           <h5>
+                           You watched  </h5>
+                        </a>
+                     </li>
+                  </ul>
+                  <div class="tab-content">
+                     <!-- =============== Views ============ -->
+                     <div class="tab-pane active" id="video-display">
+                        <div class="row" id="video-appear-here">
+
+
+
+
+                        
                 
                 <div class="col-sm-6" id='video-player'> 
                     <!-- videos Player will display here -->
                     <div id="player">
 
                       <iframe title="YouTube video player" class="youtube-player" type="text/html" target="_parent"
-                            width="480" height="390" frameborder="0" allowFullScreen></iframe>
+                            frameborder="0"
+                        style="position: relative; height: 100%; width: 100%;"  frameborder="0" allowFullScreen></iframe>
                      
                       <!-- <embed width="420" height="315" src="https://www.youtube.com/v/XGSy3_Czz8k"> -->
                       <!-- <iframe width="470" height="365" name="video-play" class="video-play"> -->

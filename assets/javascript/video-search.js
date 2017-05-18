@@ -78,37 +78,21 @@
 
 
                  //border the video-display container
-                 $('#video-display').addClass('bordered');
+                // $('#video-display').addClass('bordered');
 
                  //create class image for each video        
-                 var videoDiv = $("<div class = 'col-sm-3 item' margin-bottom='10px'>");
+                 var videoDiv = $("<div class = 'col-sm-3 item'>");
 
-                 //create favorite buttton
-                 var favButton = $("<button type='button' id='favorite' value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite-button'>");
-
-                 var addSpan = $("<span>");
-                 addSpan.addClass('glyphicon glyphicon-star')
-                 addSpan.attr("aria-hidden", 'true');
-                 favButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
-
-                 //create play buttton
-
-
-                 var playButton = $("<button type='button'  name=" + videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm play-button'>");
-                 var playSpan = $("<span>");
-                 playSpan.addClass('glyphicon glyphicon-play')
-                 playSpan.attr("aria-hidden", 'true');
-
-                 //adding href to span
-
-                 playButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
-
-                 //create image element
-                 var videoThumb = $("<div class='thumbnail'>");
+                 
+                 var videoThumb = $("<div class='recommendVideos'>");
+                 
+                 //add videoThumb to videoDiv
+                 videoDiv.append(videoThumb);
+                 
+                 var video_image = $("video_image");
 
                  var videoImage = $("<img>");
-
-                 //add class to image
+                //add class to image
                  videoImage.addClass('video-image');
 
                  //set src image
@@ -117,6 +101,60 @@
                  videoImage.attr("data-videoId", videoId);
                  videoImage.attr("value", "click");
                  videoImage.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
+                 
+                 //add videoImage to video_image
+                 video_image.append(videoImage);
+                 //add video_image to videoThumb
+                 videoThumb.append(video_image);
+
+                 //create videoTitleHolder to hold title
+                 var videoTitleHolder = $("div class='videoTitleHolder'>");
+                 var title = $("<h4>")
+                 title.attr("id", 'view_title_1');
+                 title.text(p);
+
+                 //create favorite buttton
+                 var saveButton = $("<button type='button' class='favorite-button btn btn-primary btn-sm'>");
+                 saveButton.attr("id", "favorite");
+                 
+                // var favButton = $("<button type='button' id='favorite' value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite-button'>");
+
+                 var addSpan = $("<span>");
+                 // addSpan.addClass('glyphicon glyphicon-star')
+                 // addSpan.attr("aria-hidden", 'true');
+                 saveButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
+
+                 videoTitleHolder.append(title);
+                 videoTitleHolder.append(saveButton);
+                 videoThumb.append(videoTitleHolder);
+
+
+                 //create play buttton
+
+
+                 // var playButton = $("<button type='button'  name=" + videoId + "value='click' margin-bottom='10px' class='btn btn-default btn-sm play-button'>");
+                 // var playSpan = $("<span>");
+                 // playSpan.addClass('glyphicon glyphicon-play')
+                 // playSpan.attr("aria-hidden", 'true');
+
+                 // //adding href to span
+
+                 // playButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
+
+                 // //create image element
+                 // var videoThumb = $("<div class='thumbnail'>");
+
+                 // var videoImage = $("<img>");
+
+                 // //add class to image
+                 // videoImage.addClass('video-image');
+
+                 // //set src image
+                 // //set data-videoid
+                 // videoImage.attr("src", imageUrl);
+                 // videoImage.attr("data-videoId", videoId);
+                 // videoImage.attr("value", "click");
+                 // videoImage.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
 
                  // videoImage.attr("href", 'https://www.youtube.com/watch?v='+videoId);
                  //videoImage.append("<a href=https://www.youtube.com/watch?v="+ videoId + " target='video-play'");
@@ -124,17 +162,17 @@
 
                  //prepend  video image to videoDiv
 
-                 videoThumb.append(videoImage);
-                 favButton.append(addSpan);
+                 // videoThumb.append(videoImage);
+                 // favButton.append(addSpan);
 
-                 //playButton.append(playA);
-                 playButton.append(playSpan);
+                 // //playButton.append(playA);
+                 // // playButton.append(playSpan);
 
 
-                 videoThumb.prepend(favButton);
-                 videoThumb.prepend(playButton);
-                 videoThumb.append(p);
-                 videoDiv.prepend(videoThumb);
+                 // videoThumb.prepend(favButton);
+                 // // videoThumb.prepend(playButton);
+                 // videoThumb.append(p);
+                 // videoDiv.prepend(videoThumb);
 
                  //  mouseover display full title
                  // $( ".thumbnail" )
@@ -167,14 +205,14 @@
      //function to start video, click on play button
 
 
-     $(document).on('click', '.play-button', function(e) {
-         console.log("clicked")
-         e.preventDefault();
-         var href = $(this).attr('data-href');
-         console.log("src: " + href);
-         // maybe use an ID instead
-         $('iframe').attr('src', href);
-     });
+     // $(document).on('click', '.play-button', function(e) {
+     //     console.log("clicked")
+     //     e.preventDefault();
+     //     var href = $(this).attr('data-href');
+     //     console.log("src: " + href);
+     //     // maybe use an ID instead
+     //     $('iframe').attr('src', href);
+     // });
      //start video, click on image
 
      $(document).on('click', '.video-image', function(e) {
