@@ -115,9 +115,9 @@
                  title.text(videoTitle);
                  // create viewMeta data
                  
-                 var viewMeta = $("<div class='viewMeta'>");
-                 viewMeta.attr("id", "viewsNumber");
-                 videoThumb.append(viewMeta);
+                 var viewsMeta = $("<div class='viewsMeta'>");
+                 viewsMeta.attr("id", "viewsNumber");
+                 videoThumb.append(viewsMeta);
 
 
 

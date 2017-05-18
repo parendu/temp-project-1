@@ -40,8 +40,8 @@ $(document).ready(function(){
               articleDiscription.text(response.articles[i].description);
               eachPaper.append(articleDiscription);
 
-              var articlesButtons =$("<button type='button' class='btn btn-primary paperButtons' id='paperButton_1' onclick='response.articles[i].url'  style='float: right'>");
-             // articlesButtons.attr("onclick", "window.location=" + 'response.articles[i].url');
+              var articlesButtons =$("<button type='button' class='btn btn-primary paperButtons' id='paperButton_1' style='float: right'>");
+               ticlesButtons.attr("onclick", response.articles[i].url);
               
               articlesButtons.text("Read");
               eachPaper.append(articlesButtons);
