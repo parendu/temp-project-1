@@ -100,7 +100,7 @@
 
                  //create videoTitleHolder to hold title
                  var videoTitleHolder = $("<div class='videoTitleHolder'>");
-                 var title = $("<h4>")
+                 var title = $("<h6>")
                  title.attr("id", 'view_title_1');
                  title.text(videoTitle);
                  
