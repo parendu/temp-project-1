@@ -24,14 +24,10 @@ $(document).ready(function(){
 
          console.log(response.articles);
 
-         // create a var for the results and append a header
-       // var p = "<h3>Articles:</h3>";
          
-         //$("#article-header").html(p);
-
-         //create news articles list creating li attribute
+         //create news articles list 
          // for (var i = 0; i < response.articles.length; i++) {
-          for (var i = 0; i < 6; i++) {
+          for (var i = 0; i < 5; i++) {
               var eachPaper = $("<div class='eachPaper'>");
               var articleTitle = $("<h3 id='paper_1_title'>");
               articleTitle.text(response.articles[i].title);
@@ -48,25 +44,9 @@ $(document).ready(function(){
               
               $(".articles").append(eachPaper);
 
-              // //create list
-              //  var list = $("<li>");
-              //     list.text(response.articles[i].title);
-              //       console.log(list);
-              //     var link = $("<a>");
-              //     link.attr("href", response.articles[i].url);
-              //     //link.attr("title", response.articles[i].title);
-              //     link.attr("target", "_blank");
-
-              //      link.append(list);
-              //      $('#results').append(link);
-
          }; //loop
           
-          //add border
-         // $('#articles-display').addClass('bordered');
          
-          
-
          // }).fail(function() {
          //   console.log("error");
          //  }).always(function() {
