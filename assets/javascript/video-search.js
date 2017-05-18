@@ -15,7 +15,7 @@
      $("#search-button").on("click", function(event) {
          event.preventDefault();
          //hide company name 
-         $("#company-name").hide();
+       //  $("#company-name").hide();
          //remove src from iframe
          
            $(".youtube-player").removeAttr("src");
@@ -26,13 +26,14 @@
 
          console.log("hello");
          var searchTerm = $('#search-term').val();
+         var customerKeyword = $('#customerKeywords').val();
          console.log(searchTerm);
          // search(searchTerm);
 
          //prepare request
          var request = gapi.client.youtube.search.list({
              part: 'snippet',
-             q: searchTerm + " tutorial",
+             q: customerKeyword + " " + searchTerm,
              maxResults: 8,
              order: "viewCount",
              type: "video"
