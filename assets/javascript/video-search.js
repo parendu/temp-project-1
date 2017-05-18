@@ -94,7 +94,8 @@
                  videoImage.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
                  
                  //add videoImage to video_image
-                 video_image.append(videoImage);
+                 videoThumb.append(video_image);
+                 videoThumb.append(videoImage);
                  //add video_image to videoThumb
                  videoThumb.append(video_image);
 
