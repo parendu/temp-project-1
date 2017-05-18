@@ -52,7 +52,7 @@
                  //get the data videoId, imageUrl and videoTitle from results
                  var videoId = results[i].id.videoId;
                  // console.log(videoId);
-                 var imageUrl = results[i].snippet.thumbnails.default.url;
+                 var imageUrl = results[i].snippet.thumbnails.medium.url;
                  console.log(imageUrl);
                  var videoTitleFull = results[i].snippet.title;
                  //console.log(videoTitleFull);
@@ -94,8 +94,7 @@
                  videoImage.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
                  
                  //add videoImage to video_image
-                 videoThumb.append(video_image);
-                 videoThumb.append(videoImage);
+                 video_image.append(videoImage);
                  //add video_image to videoThumb
                  videoThumb.append(video_image);
 
