@@ -117,6 +117,7 @@
                  //create favorite buttton
                  var saveButton = $("<button type='button' class='favorite-button btn btn-primary btn-sm'>");
                  saveButton.attr("id", "favorite");
+                 saveButton.text("Save")
                  
                 // var favButton = $("<button type='button' id='favorite' value='click' margin-bottom='10px' class='btn btn-default btn-sm favorite-button'>");
 
