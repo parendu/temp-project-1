@@ -189,6 +189,12 @@
 
          }); //response
 
+        $("#mainBox").css("display", "block");
+   $("#runGame").css("display", "none");
+   $(".jumbotron").css("display", "none");
+   $("#searchBar").css("padding", "40px 0px 40px 0px");
+   $("#searchBar").css('background', 'url(assets/images/bg.jpg) no-repeat center fixed');
+   $("#SMlogo").css("display", "block");
 
 
      }); //search button
@@ -228,28 +234,8 @@
 /// SCROLLING
 /// 
 
- // Add smooth scrolling to all links
-  $("favorite-video").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
 
 
  }); //document.ready
