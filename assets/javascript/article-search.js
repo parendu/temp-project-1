@@ -25,28 +25,43 @@ $(document).ready(function(){
          console.log(response.articles);
 
          // create a var for the results and append a header
-        var p = "<h3>Articles:</h3>";
-         $("#article-header").html(p);
+       // var p = "<h3>Articles:</h3>";
+         
+         //$("#article-header").html(p);
 
          //create news articles list creating li attribute
          for (var i = 0; i < response.articles.length; i++) {
 
-              //create list
-               var list = $("<li>");
-                  list.text(response.articles[i].title);
-                    console.log(list);
-                  var link = $("<a>");
-                  link.attr("href", response.articles[i].url);
-                  //link.attr("title", response.articles[i].title);
-                  link.attr("target", "_blank");
+              var eachPaper = $("<div class='eachPaper'>");
+              var articleTitle = $("<h3 id='paper_1_title'>");
+              articleTitle.text.(response.articles[i].title);
+              eachPaper.append(articleTitle);
+              var articleDiscription = $("<p id='paper_1_body'>");
+              articleDiscription.text(response.articles[i].description);
+              eachPaper.append(articleDiscription);
 
-                   link.append(list);
-                   $('#results').append(link);
+              var articlesButtons =$("<button type='button' class='btn btn-primary paperButtons' id='paperButton_1' style='float: right'>");
+              articlesButtons.attr("href", response.articles[i].utl);
+              articlesButtons.text("Read");
+              
+              $("#articles").append(eachPaper);
+
+              // //create list
+              //  var list = $("<li>");
+              //     list.text(response.articles[i].title);
+              //       console.log(list);
+              //     var link = $("<a>");
+              //     link.attr("href", response.articles[i].url);
+              //     //link.attr("title", response.articles[i].title);
+              //     link.attr("target", "_blank");
+
+              //      link.append(list);
+              //      $('#results').append(link);
 
          }; //loop
           
           //add border
-          $('#articles-display').addClass('bordered');
+         // $('#articles-display').addClass('bordered');
          
           
 
