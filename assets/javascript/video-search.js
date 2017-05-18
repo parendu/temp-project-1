@@ -117,6 +117,7 @@
                  
                  var viewMeta = $("<div class='viewMeta'>");
                  viewMeta.attr("id", "viewsNumber");
+                 videoImage.append(viewMeta);
 
 
 
