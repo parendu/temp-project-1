@@ -41,7 +41,8 @@ $(document).ready(function(){
               eachPaper.append(articleDiscription);
 
               var articlesButtons =$("<button type='button' class='btn btn-primary paperButtons' id='paperButton_1' style='float: right'>");
-              articlesButtons.attr("href", response.articles[i].url);
+              articlesButtons.attr("onclick", "window.location=" + response.articles[i].url);
+              
               articlesButtons.text("Read");
               eachPaper.append(articlesButtons);
               
