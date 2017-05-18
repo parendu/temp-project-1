@@ -113,6 +113,12 @@
                  var title = $("<h4>")
                  title.attr("id", 'view_title_1');
                  title.text(videoTitle);
+                 // create viewMeta data
+                 
+                 var viewMeta = $("<div class='viewMeta'>");
+                 viewMeta.attr("id", "viewsNumber");
+
+
 
                  //create favorite buttton
                  var saveButton = $("<button type='button' class='favorite-button btn btn-primary btn-sm'>");
@@ -232,8 +238,7 @@
          $('iframe').attr('src', href);
      });
 
-/// SCROLLING
-/// 
+
 
 
 
