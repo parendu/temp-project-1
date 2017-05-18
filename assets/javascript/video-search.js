@@ -71,7 +71,7 @@
 
                      var videoTitle = videoTitleFull;
                  }
-                 var p = $("<p>").text(videoTitle);
+                // var p = $("<p>").text(videoTitle);
 
                  console.log(videoTitleFull);
                  console.log(videoTitle);
@@ -81,7 +81,7 @@
                 // $('#video-display').addClass('bordered');
 
                  //create class image for each video        
-                 var videoDiv = $("<div class = 'col-sm-3 item'>");
+                 var videoDiv = $("<div class = 'col-sm-4 item'>");
 
                  
                  var videoThumb = $("<div class='recommendVideos'>");
@@ -89,7 +89,7 @@
                  //add videoThumb to videoDiv
                  videoDiv.append(videoThumb);
                  
-                 var video_image = $("video_image");
+                 var video_image = $("<div class='video_image'>");
 
                  var videoImage = $("<img>");
                 //add class to image
@@ -111,7 +111,7 @@
                  var videoTitleHolder = $("<div class='videoTitleHolder'>");
                  var title = $("<h4>")
                  title.attr("id", 'view_title_1');
-                 title.text(p);
+                 title.text(videoTitle);
 
                  //create favorite buttton
                  var saveButton = $("<button type='button' class='favorite-button btn btn-primary btn-sm'>");
