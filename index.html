@@ -21,185 +21,191 @@
 </head>
 
 <body>
-      <!-- header -->
-      <div class="wrapper">
-         <!-- ============== intro ================= -->
-         <div class="jumbotron">
+    <!-- header -->
+    <div class="wrapper">
+        <!-- ============== intro ================= -->
+        <div class="jumbotron">
             <div class="container">
-               <p class="text-center" class="col-lg-8 col-lg-offset-2"><img src="assets/images/logo.png"><br><br>Using <span style="color: purple;">You</span ><span style="color: salmon;">Code</span> to filter the right coding tutorials on YouTube. <br> Do you remember the story <span style="font-style: italic; font-size: 1.1em;">Tortoise and the Hare</span> ? <br> Dare you to be the learning tortoise to win !</p>
+                <p class="text-center" class="col-lg-8 col-lg-offset-2"><img src="assets/images/logo.png">
+                    <br>
+                    <br>Using <span style="color: purple;">You</span ><span style="color: salmon;">Code</span> to filter the right coding tutorials on YouTube.
+                    <br> Do you remember the story <span style="font-style: italic; font-size: 1.1em;">Tortoise and the Hare</span> ?
+                    <br> Dare you to be the learning tortoise to win !</p>
             </div>
             <!-- / container -->
-         </div>
-         <!-- / jumbotron -->
-         <!-- ============== / intro ================= -->
-         <!-- ============== search bar ================= -->
-         <section id="searchBar">
+        </div>
+        <!-- / jumbotron -->
+        <!-- ============== / intro ================= -->
+        <!-- ============== search bar ================= -->
+        <section id="searchBar">
             <div class="container">
-               <div class="row">
-            
-                  <div class="col-sm-6 col-sm-offset-3">
-                  <div ><img  id="SMlogo" src="assets/images/YouCodelogo.png"></div>
-                     <div class="input-group input-group-lg">
-                        <input type="text" class="form-control" id="customerKeywords" aria-label="keyWords" placeholder="key words, such as header ...">
-                        <div class="input-group-btn">
-                           <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HTML <span class="caret"></span></button>
-                           <ul class="dropdown-menu" id="search-term">
-                              <li>Javascript</li>
-                              <li>CSS</li>
-                              <li>PHP</li>
-                              <li>AJAX</li>
-                              <li>JSON</li>
-                              <li>Java</li>
-                              <li>C</li>
-                              <li>Python</li>
-                              <li>Firebase</li>
-                              <li>Ruby</li>
-                              <li>Bootstrap</li>
-                              <li>Ruby</li>
-                           </ul>
-                           <button type="button" class="btn btn-primary" id="search-button"><span class="glyphicon glyphicon-search"></span></button>      
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div><img id="SMlogo" src="assets/images/YouCodelogo.png"></div>
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" id="customerKeywords" aria-label="keyWords" placeholder="key words, such as header ...">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HTML <span class="caret"></span></button>
+                                <ul class="dropdown-menu" id="search-term">
+                                    <li>Javascript</li>
+                                    <li>CSS</li>
+                                    <li>PHP</li>
+                                    <li>AJAX</li>
+                                    <li>JSON</li>
+                                    <li>Java</li>
+                                    <li>C</li>
+                                    <li>Python</li>
+                                    <li>Firebase</li>
+                                    <li>Ruby</li>
+                                    <li>Bootstrap</li>
+                                    <li>Ruby</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" id="search-button"><span class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                            <!-- /btn-group -->
                         </div>
-                        <!-- /btn-group -->
-                     </div>
-                     <!-- /input-group -->
-                  </div>
-                  <!-- /.col-lg-6 -->
-               </div>
-               <!-- / row -->
+                        <!-- /input-group -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                </div>
+                <!-- / row -->
             </div>
             <!-- / container-->
-         </section>
-         <!-- /.section-->
-         <!-- ============== / search bar================= -->
-         <!-- ============== divider ================= -->
-
-<div id="mainBox">
-<!-- ============== mainBox ================= -->
-
-
-         <div class="divider">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     
-                  </div>
-                  <!-- / col-->
-               </div>
-               <!-- / row-->
-            </div>
-            <!-- / cotainer-->
-         </div>
-         <!-- ============== / divider ================= -->
-         <!--  First row include left recommended videos and right video player  -->
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <!-- left col -->
-                  <ul class="nav nav-tabs">
-                     <li class="active">
-                        <a href="#views" data-toggle="tab">
-                           <h5 class="primary">  Most Views  </h5>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#likes" data-toggle="tab">
-                           <h5>  Most Likes  </h5>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#library" data-toggle="tab">
-                           <h5>  You Saved  </h5>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#history" data-toggle="tab">
-                           <h5>
-                           You watched  </h5>
-                        </a>
-                     </li>
-                  </ul>
-                  <div class="tab-content">
-                     <!-- =============== Views ============ -->
-                     <div class="tab-pane active" id="video-display">
-                        <div class="row" id="video-appear-here">
-
-
-                        <!--row  -->
-                       </div>
-                       <!-- active -->
-                    </div> 
-                         <div class="row text-center MoreVideos">
-                           <!-- load more videos button row-->
-                           <button type="button" class="btn btn-primary" id="MoreViewsVideos"> Load More Videos</button>    
+        </section>
+        <!-- /.section-->
+        <!-- ============== / search bar================= -->
+        <!-- ============== divider ================= -->
+        <div id="mainBox">
+            <!-- ============== mainBox ================= -->
+            <div class="divider">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
                         </div>
-                        <!-- / load more videos button row-->
-                     </div>
-                <!-- =======Video Player======= -->
-                   <div class="col-md-6" id='video-player'> 
-                    <!-- videos Player will display here -->
-                    <div id="player">
-
-                      <iframe title="YouTube video player" class="youtube-player youCodeframes" type="text/html" target="_parent"
-                            frameborder="0"
-                        style="position: relative; height: 100%; width: 100%;"  frameborder="0" allowFullScreen></iframe>
-                     
-                     
+                        <!-- / col-->
                     </div>
+                    <!-- / row-->
                 </div>
+                <!-- / cotainer-->
             </div>
-
-
-        <div class="row">
+            <!-- ============== / divider ================= -->
+            <!--  First row include left recommended videos and right video player  -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- left col -->
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#views" data-toggle="tab">
+                                    <h5 class="primary">  Most Views  </h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#likes" data-toggle="tab">
+                                    <h5>  Most Likes  </h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#library" data-toggle="tab">
+                                    <h5>  You Saved  </h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#history" data-toggle="tab">
+                                    <h5>
+                           You watched  </h5>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <!-- =============== Views ============ -->
+                            <div class="tab-pane active" id="video-display">
+                                <div class="row" id="video-appear-here">
+                                    <!-- Recommended video will display here -->
+                                    <!--row  -->
+                                </div>
+                              
+                            <div class="row text-center MoreVideos">
+                                <!-- load more videos button row-->
+                                <button type="button" class="btn btn-primary" id="MoreViewsVideos"> Load More Videos</button>
+                            </div>
+                            <!-- / load more videos button row-->
+                        </div>
+                        <!-- tap view -->
+                        <!-- =======Video Player======= -->
+                        <div class="col-md-6" id='video-player'>
+                            <!-- videos Player will display here -->
+                            <div id="player">
+                                <iframe title="YouTube video player" class="youtube-player youCodeframes" type="text/html" target="_parent" frameborder="0" style="position: relative; height: 100%; width: 100%;" frameborder="0" allowFullScreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============== divider ================= -->
+                    <div class="divider">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                </div>
+                                <!-- / col-->
+                            </div>
+                            <!-- / row-->
+                        </div>
+                        <!-- / cotainer-->
+                    </div>
+                    <!-- ============== / divider ================= -->
+                    <section class="paper" style="background-color: #e9e9e9; ">
+                        <div class="container">
+                            <div class="col-md-12 articles">
+                                <!-- articles will display here -->
+                            </div>
+                        </div>
+                </div>
+                </section>
+            </div>
+            <!-- ============== /mainBox ================= -->
+           <!--  <div class="row">
                 <div class="col-sm-6" id='articles-display'>
-                  <div id="article-header">
-
-                  </div>
+                    <div id="article-header">
+                    </div> -->
                     <!-- videos will display here -->
-                   <div id="Article-appear-here">
-                     <ul data-role="listview" id="results" data-inset="true">
-                     </ul>
-                    </div>
-                </div> 
-                
-                <div class="col-sm-6 main" id='favorite-video'> 
-                    <!-- videos Player will display here -->
-                    <div id="favorite-appear-here">
-
-
-                      <!-- <embed width="420" height="315">   -->
-                     
+                    <!-- <div id="Article-appear-here">
+                        <ul data-role="listview" id="results" data-inset="true">
+                        </ul>
                     </div>
                 </div>
+                <div class="col-sm-6 main" id='favorite-video'> -->
+                    <!-- videos Player will display here -->
+                    <!-- <div id="favorite-appear-here"> -->
+                        <!-- <embed width="420" height="315">   -->
+                    <!-- </div>
+                </div>
+            </div> -->
+            <!-- ============== animation ================= -->
+            <section id="runGame">
+                <div class="row">
+                    <img class="tortoise" src="assets/images/tortoise.png">
+                    <img class="road" src="assets/images/road.png">
+                    <img class="flag" src="assets/images/flag.png">
+                </div>
+            </section>
+            <!-- / runGame-->
+            <!-- ============== animation ================= -->
+            <!-- ============== child div in wrapper to keep the footer at the bottom================= -->
+            <div class="push"></div>
+            <!-- ============== / child div in wrapper to keep the footer at the bottom================= -->
         </div>
-
-   <!-- ============== animation ================= -->
-         <section id="runGame">
-            <div class="row">
-               <img class="tortoise" src="assets/images/tortoise.png">
-              <img class="road"  src="assets/images/road.png">
-               <img class="flag"  src="assets/images/flag.png">
+        <!-- end wrapper -->
+        <div class="row footer col-sm-10 col-sm-offset-1">
+            <div>
+                &#169 copyright
+                <span class="pull-right">About YouCode Team | Contact Us</span>
             </div>
-         </section>
-         <!-- / runGame-->
-         <!-- ============== animation ================= -->
-         <!-- ============== child div in wrapper to keep the footer at the bottom================= -->
-         <div class="push"></div>
-         <!-- ============== / child div in wrapper to keep the footer at the bottom================= -->
-      </div>
-      <!-- end wrapper -->
-      <div class="row footer col-sm-10 col-sm-offset-1">
-         <div>
-            &#169 copyright
-            <span class="pull-right">About YouCode Team | Contact Us</span>
-         </div>
-      </div>
-      <!-- end Row 2 -->
-
-
-            <script src="/temp-project-1/assets/javascript/video-search.js"></script>
-            <script src="/temp-project-1/assets/javascript/article-search.js"></script>
-            <script src="/temp-project-1/assets/javascript/watch-later.js"></script> -->
-            <script src="https://apis.google.com/js/client.js?onload=init"></script>
-    </body>
+        </div>
+        <!-- end Row 2 -->
+        <script src="/temp-project-1/assets/javascript/video-search.js"></script>
+        <script src="/temp-project-1/assets/javascript/article-search.js"></script>
+        <script src="/temp-project-1/assets/javascript/watch-later.js"></script> -->
+        <script src="https://apis.google.com/js/client.js?onload=init"></script>
+</body>
 
 </html>

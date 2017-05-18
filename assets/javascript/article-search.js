@@ -34,7 +34,7 @@ $(document).ready(function(){
 
               var eachPaper = $("<div class='eachPaper'>");
               var articleTitle = $("<h3 id='paper_1_title'>");
-              articleTitle.text.(response.articles[i].title);
+              articleTitle.text(response.articles[i].title);
               eachPaper.append(articleTitle);
               var articleDiscription = $("<p id='paper_1_body'>");
               articleDiscription.text(response.articles[i].description);
