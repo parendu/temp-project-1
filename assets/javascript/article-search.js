@@ -44,7 +44,7 @@ $(document).ready(function(){
               articlesButtons.attr("href", response.articles[i].utl);
               articlesButtons.text("Read");
               
-              $("#articles").append(eachPaper);
+              $(".articles").append(eachPaper);
 
               // //create list
               //  var list = $("<li>");
