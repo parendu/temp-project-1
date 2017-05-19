@@ -91,27 +91,28 @@
                             
           //get the data videoId, imageUrl and videoTitle from results
 
+             //get the data videoId, imageUrl and videoTitle from results
+
              var videoId = $(this).attr("data-videoId");
-             console.log(videoId);
              
-              // var title = $(this).siblings('<h6>').text();
-              // console.log(title);
+              console.log(videoId);
+              var imageUrl = $(this).attr("data-src");
+     
+              console.log(imageUrl);
+             
+              var title = $(this).siblings('h6').text();
+              console.log(title);
               var href_1 = $(this).attr("data-href");
+              
               console.log(href_1);
-
-               var imageUrl = $(this).attr("data-src");
-                console.log(imageUrl);
-
-             
-                 
+ 
                 database.ref().push({
                 "videoId": videoId,
                 "imageUrl": imageUrl,
                  "href": href_1,
-                 "title" : title
+                
                 });
-              // $(window).load(function () {
-
+             
 
     });
 

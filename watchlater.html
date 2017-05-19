@@ -28,11 +28,13 @@
         <div class="col-sm-4 item">
             <div class="recommendVideos">
                 <div class="video_image">
-                    <img class="video-image" src="https://i.ytimg.com/vi/hoISwxEy5m4/mqdefault.jpg" data-videoid="hoISwxEy5m4" value="click" data-href="https://www.youtube.com/embed/hoISwxEy5m4"></div><div class="viewsMeta" id="viewsNumber">
+                    <img class="video-image" src="https://i.ytimg.com/vi/2cnOvMFnRvs/mqdefault.jpg" data-videoid="2cnOvMFnRvs" value="click" data-href="https://www.youtube.com/embed/2cnOvMFnRvs">
                 </div>
+                    <div class="viewsMeta" id="viewsNumber">
+                    </div>
                 <div class="videoTitleHolder">
-                    <h6 id="view_title_1">CSS GUN GAME 1v1 with APL Fisher 3</h6>
-                    <button type="button" class="favorite-button btn btn-primary btn-sm" id="favorite" data-href="https://www.youtube.com/embed/hoISwxEy5m4" data-videoid="hoISwxEy5m4">Save</button>
+                    <h6 id="view_title_1">CSS - Alala (OFFICIAL VIDEO)</h6>
+                    <button type="button" class="favorite-button btn btn-primary btn-sm" id="favorite" data-href="https://www.youtube.com/embed/2cnOvMFnRvs" data-videoid="2cnOvMFnRvs" data-src="https://i.ytimg.com/vi/2cnOvMFnRvs/mqdefault.jpg">Save</button>
                 </div>
             </div>
         </div>
@@ -158,10 +160,12 @@
              var videoId = $(this).attr("data-videoId");
              // var videoId = $("data-videoId").val()
               console.log(videoId);
-              var imageUrl = $(this).attr("src");
+              var imageUrl = $(this).attr("data-src");
              // var videoId = $("data-videoId").val()
+              
               console.log(imageUrl);
-              var title = $(this).siblings('<h6>').text();
+             
+              var title = $(this).siblings('h6').text();
               var href_1 = $(this).attr("data-href");
               console.log(title);
               console.log(href_1);
@@ -173,7 +177,7 @@
                 "videoId": videoId,
                 "imageUrl": imageUrl,
                  "href": href_1,
-                 "title" : title
+            //     "title" : title
                 });
               // $(window).load(function () {
 
