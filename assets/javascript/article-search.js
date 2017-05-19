@@ -36,11 +36,14 @@ $(document).ready(function(){
               articleDiscription.text(response.articles[i].description);
               eachPaper.append(articleDiscription);
 
+              var link = $("<a>");
+              link.attr("href", response.articles[i].url);
               var articlesButtons =$("<button type='button' class='btn btn-primary paperButtons' id='paperButton_1' style='float: right'>");
-               articlesButtons.attr("onclick", response.articles[i].url);
+              link.appendd(articlesButtons);
+              // articlesButtons.attr("onclick", response.articles[i].url);
               
               articlesButtons.text("Read");
-              eachPaper.append(articlesButtons);
+              eachPaper.append(link);
               
               $(".articles").append(eachPaper);
 

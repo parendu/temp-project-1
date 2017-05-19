@@ -18,9 +18,9 @@
          
            $(".youtube-player").removeAttr("src");
           $(".youtube-player").empty();
-          $("#video-display").removeClass("bordered");
+         
           $("#video-appear-here").empty();
-           // player.destroy():Void
+           player.destroy();
 
          console.log("hello");
          var searchTerm = $('#search-term').val();
