@@ -39,7 +39,7 @@ $(document).ready(function(){
               var link = $("<a>");
               link.attr("href", response.articles[i].url);
               var articlesButtons =$("<button type='button' class='btn btn-primary paperButtons' id='paperButton_1' style='float: right'>");
-              link.appendd(articlesButtons);
+              link.append(articlesButtons);
               // articlesButtons.attr("onclick", response.articles[i].url);
               
               articlesButtons.text("Read");
