@@ -20,7 +20,7 @@
           $(".youtube-player").empty();
          
           $("#video-appear-here").empty();
-           player.destroy();
+          // player.destroy();
 
          console.log("hello");
          var searchTerm = $('#search-term').val();
