@@ -94,12 +94,12 @@
              var videoId = $(this).attr("data-videoId");
              console.log(videoId);
              
-              var title = $(this).siblings('<h6>').text();
-              console.log(title);
+              // var title = $(this).siblings('<h6>').text();
+              // console.log(title);
               var href_1 = $(this).attr("data-href");
               console.log(href_1);
 
-               var imageUrl = $(this).attr("src");
+               var imageUrl = $(this).attr("data-src");
                 console.log(imageUrl);
 
              
