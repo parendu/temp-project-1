@@ -24,18 +24,21 @@
 
     
 <div class="container">
-<div class="row">
-<div class="col-sm-3 item" margin-bottom="10px">
-    <div class="thumbnail">
+    <div class="row">
+        <div class="col-sm-4 item">
+            <div class="recommendVideos">
+                <div class="video_image">
+                    <img class="video-image" src="https://i.ytimg.com/vi/hoISwxEy5m4/mqdefault.jpg" data-videoid="hoISwxEy5m4" value="click" data-href="https://www.youtube.com/embed/hoISwxEy5m4"></div><div class="viewsMeta" id="viewsNumber">
+                </div>
+                <div class="videoTitleHolder">
+                    <h6 id="view_title_1">CSS GUN GAME 1v1 with APL Fisher 3</h6>
+                    <button type="button" class="favorite-button btn btn-primary btn-sm" id="favorite" data-href="https://www.youtube.com/embed/hoISwxEy5m4" data-videoid="hoISwxEy5m4">Save</button>
+                </div>
+            </div>
+        </div>
 
-        <button type="button" name="4oSCuEtxRK8value"margin-bottom="10px" class="btn btn-default btn-sm play-button" data-href="https://www.youtube.com/embed/4oSCuEtxRK8"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
-
-        <button type="button" data-videoId="4oSCuEtxRK8value" id="favorite" margin-bottom="10px" class="btn btn-default btn-sm favorite-button" data-href="https://www.youtube.com/embed/4oSCuEtxRK8"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></button>
-        <img class="video-image" src="https://i.ytimg.com/vi/4oSCuEtxRK8/default.jpg" data-videoId="4oSCuEtxRK8" value="click" data-href="https://www.youtube.com/embed/4oSCuEtxRK8">
-        <p>PHP Tutorials: Register &amp; Login: User lo...</p>
     </div>
-</div>
-</div>
+
 <div class="row">
                 <div class="col-sm-6" id='articles-display'>
                     <!-- videos will display here -->
@@ -155,7 +158,7 @@
              var videoId = $(this).attr("data-videoId");
              // var videoId = $("data-videoId").val()
               console.log(videoId);
-              var imageUrl = $(this).attr('img').attr("src");
+              var imageUrl = $(this).attr("src");
              // var videoId = $("data-videoId").val()
               console.log(imageUrl);
               var title = $(this).siblings('<h6>').text();
