@@ -97,9 +97,10 @@
               var imageUrl = $(this).siblings('img').attr("src");
              // var videoId = $("data-videoId").val()
               console.log(imageUrl);
-              var title = $(this).siblings('p').text();
-              var href_1 = $(this).siblings('img').attr("data-href");
+               var title = $(this).siblings('<h6>').text();
+              var href_1 = $(this).attr("data-href");
               console.log(title);
+              console.log(href_1);
       ////Check video is already in watch later list
 
              
