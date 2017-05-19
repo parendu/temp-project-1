@@ -114,6 +114,7 @@
                  saveButton.attr("id", "favorite");
                  saveButton.text("Save")        
                  saveButton.attr("data-href", 'https://www.youtube.com/embed/' + videoId);
+                 saveButton.attr("data-videoId", videoId);
                 //create append title, saveButton to videoTitleHolder
                 //apeend videoTitleHolder to videoThumb
                  videoTitleHolder.append(title);
