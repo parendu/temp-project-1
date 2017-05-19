@@ -110,7 +110,7 @@
                 "videoId": videoId,
                 "imageUrl": imageUrl,
                  "href": href_1,
-                
+                  "title": title
                 });
              
 
