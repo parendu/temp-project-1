@@ -151,4 +151,21 @@
          $('iframe').attr('src', href);
      });
 
+     //displaying correct content on tabs navigation
+     
+     // tab
+            $('#rowTab a:first').tab('show');
+
+            //for bootstrap 3 use 'shown.bs.tab' instead of 'shown' in the next line
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            //save the latest tab; use cookies if you like 'em better:
+            localStorage.setItem('selectedTab', $(e.target).attr('id'));
+            });
+
+            //go to the latest tab, if it exists:
+            var selectedTab = localStorage.getItem('selectedTab');
+            if (selectedTab) {
+              $('#'+selectedTab).tab('show');
+            }
+
  }); //document.ready
