@@ -92,21 +92,18 @@
           //get the data videoId, imageUrl and videoTitle from results
 
              var videoId = $(this).attr("data-videoId");
-            
-              console.log(videoId);
+             console.log(videoId);
              
-             
-              console.log(imageUrl);
-               var title = $(this).siblings('<h6>').text();
-              var href_1 = $(this).attr("data-href");
+              var title = $(this).siblings('<h6>').text();
               console.log(title);
+              var href_1 = $(this).attr("data-href");
               console.log(href_1);
 
-               var imageUrl = $(this).siblings('img').attr("src");
-      ////Check video is already in watch later list
+               var imageUrl = $(this).attr("src");
+                console.log(imageUrl);
 
              
-                 // database.ref().push(newTrain);
+                 
                 database.ref().push({
                 "videoId": videoId,
                 "imageUrl": imageUrl,
